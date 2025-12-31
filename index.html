@@ -1,55 +1,74 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Gloomhaven Rules Reference</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        :root{--bg:#0d0d14;--card:#1a1a2e;--gold:#c9a227;--gold-light:#e8c547;--red:#8b2635;--text:#e8e6e3;--text2:#a09c94;--muted:#6b6660;--border:#2a2a3e}
-        *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
-        body{font-family:'Crimson Pro',serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:18px}
-        header{background:var(--card);border-bottom:1px solid var(--border);padding:1.5rem;text-align:center}
-        .logo{font-family:'Cinzel',serif;font-size:2rem;color:var(--gold)}.logo span{color:var(--text2);font-size:1.5rem}
-        .subtitle{color:var(--muted);margin-top:0.5rem}
-        .search-box{max-width:500px;margin:1.5rem auto 0}
-        #search{width:100%;padding:0.75rem;background:var(--bg);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:1rem}
-        #search:focus{outline:none;border-color:var(--gold)}
-        main{max-width:900px;margin:0 auto;padding:2rem}
-        .quick{margin-bottom:2rem}.quick-title{font-family:'Cinzel',serif;color:var(--gold);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem;font-size:0.85rem}
-        .quick-grid{display:flex;flex-wrap:wrap;gap:0.5rem}
-        .quick-btn{background:var(--card);padding:0.5rem 1rem;border-radius:6px;color:var(--text2);cursor:pointer;border:1px solid transparent;transition:0.15s}
-        .quick-btn:hover{color:var(--gold);border-color:var(--gold)}
-        .alpha-nav{display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;margin-bottom:2rem}
-        .alpha-nav a{color:var(--muted);text-decoration:none;padding:0.25rem 0.5rem;font-family:'Cinzel',serif}
-        .alpha-nav a:hover{color:var(--gold)}
-        .section{margin-bottom:2rem}
-        .letter{font-family:'Cinzel',serif;font-size:1.5rem;color:var(--gold);border-bottom:2px solid var(--gold);display:inline-block;margin-bottom:1rem;padding-bottom:0.5rem}
-        .list{list-style:none}
-        .item{margin-bottom:0.25rem}
-        .term{display:block;padding:0.75rem 1rem;background:var(--card);border-radius:8px;cursor:pointer;border-left:3px solid transparent;transition:0.15s}
-        .term:hover,.term.active{background:#252542;border-left-color:var(--gold);padding-left:1.25rem}
-        .detail{display:none;background:var(--card);border-radius:8px;padding:1.5rem;margin:0.5rem 0 1rem;border:1px solid var(--border)}
-        .detail.active{display:block}
-        .detail h3{font-family:'Cinzel',serif;color:var(--gold);margin-bottom:1rem}
-        .detail p{margin-bottom:0.75rem;color:var(--text2)}
-        .detail ul,.detail ol{margin:0.75rem 0 1rem 1.5rem;color:var(--text2)}
-        .detail li{margin-bottom:0.5rem}
-        .ref{color:var(--gold-light);border-bottom:1px dotted var(--gold);cursor:pointer}.ref:hover{border-bottom-style:solid}
-        .tag{display:inline-block;font-size:0.75rem;padding:0.2rem 0.5rem;border-radius:4px;margin-right:0.5rem;margin-bottom:0.5rem}
-        .tag-neg{background:rgba(139,38,53,0.3);color:#e57373}
-        .tag-pos{background:rgba(45,111,74,0.3);color:#81c784}
-        .tag-page{background:rgba(45,74,111,0.3);color:#90caf9;font-family:monospace}
-        .note{background:rgba(201,162,39,0.1);border-left:3px solid var(--gold);padding:0.75rem 1rem;margin:1rem 0;border-radius:0 6px 6px 0}
-        .warn{background:rgba(139,38,53,0.15);border-left-color:var(--red)}
-        .formula{font-family:monospace;background:rgba(201,162,39,0.15);padding:0.15rem 0.4rem;border-radius:3px;color:var(--gold-light)}
-        .back-top{position:fixed;bottom:2rem;right:2rem;width:48px;height:48px;background:var(--gold);color:var(--bg);border:none;border-radius:50%;cursor:pointer;font-size:1.25rem;opacity:0;visibility:hidden;transition:0.3s;z-index:100}
-        .back-top.visible{opacity:1;visibility:visible}
-        footer{text-align:center;padding:2rem;color:var(--muted);border-top:1px solid var(--border)}
-        footer a{color:var(--gold);text-decoration:none}
-        @media(max-width:600px){main{padding:1rem}.logo{font-size:1.5rem}body{font-size:16px}}
-        .item.hidden,.section.hidden{display:none}
-    </style>
+
+```
+<!-- PWA Meta Tags -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Gloomhaven">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#1a1a2e">
+<meta name="application-name" content="Gloomhaven Rules">
+
+<!-- Icons -->
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="manifest" href="manifest.json">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    :root{--bg:#0d0d14;--card:#1a1a2e;--gold:#c9a227;--gold-light:#e8c547;--red:#8b2635;--text:#e8e6e3;--text2:#a09c94;--muted:#6b6660;--border:#2a2a3e}
+    *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+    body{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom);font-family:'Crimson Pro',serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:18px}
+    header{background:var(--card);border-bottom:1px solid var(--border);padding:1.5rem;text-align:center}
+    .logo{font-family:'Cinzel',serif;font-size:2rem;color:var(--gold)}.logo span{color:var(--text2);font-size:1.5rem}
+    .subtitle{color:var(--muted);margin-top:0.5rem}
+    .search-box{max-width:500px;margin:1.5rem auto 0}
+    #search{width:100%;padding:0.75rem;background:var(--bg);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:1rem}
+    #search:focus{outline:none;border-color:var(--gold)}
+    main{max-width:900px;margin:0 auto;padding:2rem}
+    .quick{margin-bottom:2rem}.quick-title{font-family:'Cinzel',serif;color:var(--gold);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem;font-size:0.85rem}
+    .quick-grid{display:flex;flex-wrap:wrap;gap:0.5rem}
+    .quick-btn{background:var(--card);padding:0.5rem 1rem;border-radius:6px;color:var(--text2);cursor:pointer;border:1px solid transparent;transition:0.15s}
+    .quick-btn:hover{color:var(--gold);border-color:var(--gold)}
+    .alpha-nav{display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;margin-bottom:2rem}
+    .alpha-nav a{color:var(--muted);text-decoration:none;padding:0.25rem 0.5rem;font-family:'Cinzel',serif}
+    .alpha-nav a:hover{color:var(--gold)}
+    .section{margin-bottom:2rem}
+    .letter{font-family:'Cinzel',serif;font-size:1.5rem;color:var(--gold);border-bottom:2px solid var(--gold);display:inline-block;margin-bottom:1rem;padding-bottom:0.5rem}
+    .list{list-style:none}
+    .item{margin-bottom:0.25rem}
+    .term{display:block;padding:0.75rem 1rem;background:var(--card);border-radius:8px;cursor:pointer;border-left:3px solid transparent;transition:0.15s}
+    .term:hover,.term.active{background:#252542;border-left-color:var(--gold);padding-left:1.25rem}
+    .detail{display:none;background:var(--card);border-radius:8px;padding:1.5rem;margin:0.5rem 0 1rem;border:1px solid var(--border)}
+    .detail.active{display:block}
+    .detail h3{font-family:'Cinzel',serif;color:var(--gold);margin-bottom:1rem}
+    .detail p{margin-bottom:0.75rem;color:var(--text2)}
+    .detail ul,.detail ol{margin:0.75rem 0 1rem 1.5rem;color:var(--text2)}
+    .detail li{margin-bottom:0.5rem}
+    .ref{color:var(--gold-light);border-bottom:1px dotted var(--gold);cursor:pointer}.ref:hover{border-bottom-style:solid}
+    .tag{display:inline-block;font-size:0.75rem;padding:0.2rem 0.5rem;border-radius:4px;margin-right:0.5rem;margin-bottom:0.5rem}
+    .tag-neg{background:rgba(139,38,53,0.3);color:#e57373}
+    .tag-pos{background:rgba(45,111,74,0.3);color:#81c784}
+    .tag-page{background:rgba(45,74,111,0.3);color:#90caf9;font-family:monospace}
+    .note{background:rgba(201,162,39,0.1);border-left:3px solid var(--gold);padding:0.75rem 1rem;margin:1rem 0;border-radius:0 6px 6px 0}
+    .warn{background:rgba(139,38,53,0.15);border-left-color:var(--red)}
+    .formula{font-family:monospace;background:rgba(201,162,39,0.15);padding:0.15rem 0.4rem;border-radius:3px;color:var(--gold-light)}
+    .back-top{position:fixed;bottom:2rem;right:2rem;width:48px;height:48px;background:var(--gold);color:var(--bg);border:none;border-radius:50%;cursor:pointer;font-size:1.25rem;opacity:0;visibility:hidden;transition:0.3s;z-index:100}
+    .back-top.visible{opacity:1;visibility:visible}
+    footer{text-align:center;padding:2rem;color:var(--muted);border-top:1px solid var(--border)}
+    footer a{color:var(--gold);text-decoration:none}
+    @media(max-width:600px){main{padding:1rem}.logo{font-size:1.5rem}body{font-size:16px}}
+    .item.hidden,.section.hidden{display:none}
+</style>
+```
+
 </head>
 <body>
 <header>
@@ -75,24 +94,27 @@
         <a href="#A">A</a><a href="#B">B</a><a href="#C">C</a><a href="#D">D</a><a href="#E">E</a><a href="#F">F</a><a href="#G">G</a><a href="#H">H</a><a href="#I">I</a><a href="#J">J</a><a href="#L">L</a><a href="#M">M</a><a href="#N">N</a><a href="#O">O</a><a href="#P">P</a><a href="#R">R</a><a href="#S">S</a><a href="#T">T</a><a href="#W">W</a>
     </nav>
 
-    <section id="A" class="section"><div class="letter">A</div><ul class="list">
-        <li class="item"><span class="term" data-term="active-bonus">Active Bonus</span><div class="detail"><h3>Active Bonus</h3><span class="tag tag-page">p25</span><p>Ability cards that stay in your <strong>Active Area</strong> with ongoing effects.</p><ul><li><strong>Persistent:</strong> Stays until all slots used or scenario ends. Place token on first slot, move each trigger.</li><li><strong>Round:</strong> Active until end of round, then goes to discard/lost.</li></ul><p>Cards in Active Area count as discarded/lost (depending on symbol). You can voluntarily end any active bonus by moving the card to discard/lost.</p></div></li>
-        <li class="item"><span class="term" data-term="advantage">Advantage</span><div class="detail"><h3>Advantage</h3><span class="tag tag-pos">Positive</span><span class="tag tag-page">p20</span><p>Draw <strong>two</strong> <span class="ref" data-term="attack-modifier">Attack Modifier</span> cards, use the <strong>better</strong> one.</p><p><strong>Which is better:</strong></p><ul><li>Higher number wins</li><li>×2 beats any number, Null loses to any number</li><li>Positive effects (elements, conditions) are better but undefined</li><li>If ambiguous: use first card drawn</li></ul><p><strong>With Rolling Modifiers:</strong></p><ul><li>One rolling + one normal: rolling adds to chosen card</li><li>Two rolling: keep drawing, all effects apply</li></ul><div class="note">Advantage + <span class="ref" data-term="disadvantage">Disadvantage</span> = cancel out, draw one card normally.</div><p>Main source: <span class="ref" data-term="strengthen">Strengthen</span> condition.</p></div></li>
-        <li class="item"><span class="term" data-term="adjacent">Adjacent</span><div class="detail"><h3>Adjacent</h3><p>Hexes sharing a border with no wall between them.</p><ul><li>Wall between = NOT adjacent</li><li>Closed <span class="ref" data-term="door">door</span> between = NOT adjacent</li><li>Only sharing corner = NOT adjacent</li><li>Flying figure on obstacle = NOT adjacent to that obstacle</li></ul></div></li>
-        <li class="item"><span class="term" data-term="ally">Ally</span><div class="detail"><h3>Ally</h3><p>Any figure on your side (other characters and their <span class="ref" data-term="summon">summons</span>).</p><div class="note warn"><strong>You are NOT your own ally!</strong></div><p>"Heal all allies" does NOT heal you. "All allies gain Shield" doesn't include you. Use "self" to mean yourself.</p></div></li>
-        <li class="item"><span class="term" data-term="area-of-effect">Area of Effect (AoE)</span><div class="detail"><h3>Area of Effect</h3><span class="tag tag-page">p21</span><p>Attacks affecting multiple hexes shown by a pattern.</p><ul><li><strong>Grey hex:</strong> Your position → Melee AoE</li><li><strong>Red hexes:</strong> Target hexes, always in range if attack is valid</li><li><strong>No grey:</strong> Ranged AoE, place pattern within range</li></ul><p>Can rotate/mirror pattern. MUST target all enemies in red hexes you have <span class="ref" data-term="line-of-sight">LOS</span> to. Draw separate <span class="ref" data-term="attack-modifier">modifier</span> per target. Allies never hit unless stated.</p></div></li>
-        <li class="item"><span class="term" data-term="attack">Attack</span><div class="detail"><h3>Attack X</h3><span class="tag tag-page">p19-22</span><p>Deal damage to enemies. <strong>Only "Attack" abilities are attacks</strong>—"deal/suffer damage" effects are different.</p><p><strong>Types:</strong></p><ul><li><strong>Melee:</strong> No Range = Range 1 (adjacent only)</li><li><strong>Ranged X:</strong> Up to X hexes with <span class="ref" data-term="line-of-sight">LOS</span></li></ul><p><strong>Steps:</strong></p><ol><li>Declare target(s) in range + LOS</li><li>Apply bonuses (+1 if target <span class="ref" data-term="poison">Poisoned</span>)</li><li>Draw <span class="ref" data-term="attack-modifier">modifier</span></li><li>Apply target's <span class="ref" data-term="shield">Shield</span></li><li>Deal damage + effects</li><li>Resolve <span class="ref" data-term="retaliate">Retaliate</span></li></ol><div class="note warn">Ranged attack on adjacent enemy = <span class="ref" data-term="disadvantage">Disadvantage</span></div><p>Can't attack while <span class="ref" data-term="disarm">Disarmed</span>. Null = 0 damage but effects still apply.</p></div></li>
-        <li class="item"><span class="term" data-term="attack-modifier">Attack Modifier Deck</span><div class="detail"><h3>Attack Modifier Deck</h3><span class="tag tag-page">p11</span><p>Draw a card for each <span class="ref" data-term="attack">attack</span> to modify damage.</p><p><strong>Standard deck (20):</strong> 6× +0, 5× +1, 5× -1, 1× +2, 1× -2, 1× ×2, 1× Null</p><p><strong>Special cards:</strong></p><ul><li><strong>Null (×0):</strong> 0 damage, but effects still apply</li><li><strong>×2:</strong> Double damage</li><li><strong><span class="ref" data-term="bless">Bless</span>:</strong> Like ×2, removed after draw</li><li><strong><span class="ref" data-term="curse">Curse</span>:</strong> Like Null, removed after draw</li><li><strong><span class="ref" data-term="rolling-modifier">Rolling</span>:</strong> Keep drawing until non-rolling</li></ul><p>Shuffle at round end after drawing ×2/Null. Improve with <span class="ref" data-term="perk">Perks</span>.</p></div></li>
-    </ul></section>
+```
+<section id="A" class="section"><div class="letter">A</div><ul class="list">
+    <li class="item"><span class="term" data-term="active-bonus">Active Bonus</span><div class="detail"><h3>Active Bonus</h3><span class="tag tag-page">p25</span><p>Ability cards that stay in your <strong>Active Area</strong> with ongoing effects.</p><ul><li><strong>Persistent:</strong> Stays until all slots used or scenario ends. Place token on first slot, move each trigger.</li><li><strong>Round:</strong> Active until end of round, then goes to discard/lost.</li></ul><p>Cards in Active Area count as discarded/lost (depending on symbol). You can voluntarily end any active bonus by moving the card to discard/lost.</p></div></li>
+    <li class="item"><span class="term" data-term="advantage">Advantage</span><div class="detail"><h3>Advantage</h3><span class="tag tag-pos">Positive</span><span class="tag tag-page">p20</span><p>Draw <strong>two</strong> <span class="ref" data-term="attack-modifier">Attack Modifier</span> cards, use the <strong>better</strong> one.</p><p><strong>Which is better:</strong></p><ul><li>Higher number wins</li><li>×2 beats any number, Null loses to any number</li><li>Positive effects (elements, conditions) are better but undefined</li><li>If ambiguous: use first card drawn</li></ul><p><strong>With Rolling Modifiers:</strong></p><ul><li>One rolling + one normal: rolling adds to chosen card</li><li>Two rolling: keep drawing, all effects apply</li></ul><div class="note">Advantage + <span class="ref" data-term="disadvantage">Disadvantage</span> = cancel out, draw one card normally.</div><p>Main source: <span class="ref" data-term="strengthen">Strengthen</span> condition.</p></div></li>
+    <li class="item"><span class="term" data-term="adjacent">Adjacent</span><div class="detail"><h3>Adjacent</h3><p>Hexes sharing a border with no wall between them.</p><ul><li>Wall between = NOT adjacent</li><li>Closed <span class="ref" data-term="door">door</span> between = NOT adjacent</li><li>Only sharing corner = NOT adjacent</li><li>Flying figure on obstacle = NOT adjacent to that obstacle</li></ul></div></li>
+    <li class="item"><span class="term" data-term="ally">Ally</span><div class="detail"><h3>Ally</h3><p>Any figure on your side (other characters and their <span class="ref" data-term="summon">summons</span>).</p><div class="note warn"><strong>You are NOT your own ally!</strong></div><p>"Heal all allies" does NOT heal you. "All allies gain Shield" doesn't include you. Use "self" to mean yourself.</p></div></li>
+    <li class="item"><span class="term" data-term="area-of-effect">Area of Effect (AoE)</span><div class="detail"><h3>Area of Effect</h3><span class="tag tag-page">p21</span><p>Attacks affecting multiple hexes shown by a pattern.</p><ul><li><strong>Grey hex:</strong> Your position → Melee AoE</li><li><strong>Red hexes:</strong> Target hexes, always in range if attack is valid</li><li><strong>No grey:</strong> Ranged AoE, place pattern within range</li></ul><p>Can rotate/mirror pattern. MUST target all enemies in red hexes you have <span class="ref" data-term="line-of-sight">LOS</span> to. Draw separate <span class="ref" data-term="attack-modifier">modifier</span> per target. Allies never hit unless stated.</p></div></li>
+    <li class="item"><span class="term" data-term="attack">Attack</span><div class="detail"><h3>Attack X</h3><span class="tag tag-page">p19-22</span><p>Deal damage to enemies. <strong>Only "Attack" abilities are attacks</strong>—"deal/suffer damage" effects are different.</p><p><strong>Types:</strong></p><ul><li><strong>Melee:</strong> No Range = Range 1 (adjacent only)</li><li><strong>Ranged X:</strong> Up to X hexes with <span class="ref" data-term="line-of-sight">LOS</span></li></ul><p><strong>Steps:</strong></p><ol><li>Declare target(s) in range + LOS</li><li>Apply bonuses (+1 if target <span class="ref" data-term="poison">Poisoned</span>)</li><li>Draw <span class="ref" data-term="attack-modifier">modifier</span></li><li>Apply target's <span class="ref" data-term="shield">Shield</span></li><li>Deal damage + effects</li><li>Resolve <span class="ref" data-term="retaliate">Retaliate</span></li></ol><div class="note warn">Ranged attack on adjacent enemy = <span class="ref" data-term="disadvantage">Disadvantage</span></div><p>Can't attack while <span class="ref" data-term="disarm">Disarmed</span>. Null = 0 damage but effects still apply.</p></div></li>
+    <li class="item"><span class="term" data-term="attack-modifier">Attack Modifier Deck</span><div class="detail"><h3>Attack Modifier Deck</h3><span class="tag tag-page">p11</span><p>Draw a card for each <span class="ref" data-term="attack">attack</span> to modify damage.</p><p><strong>Standard deck (20):</strong> 6× +0, 5× +1, 5× -1, 1× +2, 1× -2, 1× ×2, 1× Null</p><p><strong>Special cards:</strong></p><ul><li><strong>Null (×0):</strong> 0 damage, but effects still apply</li><li><strong>×2:</strong> Double damage</li><li><strong><span class="ref" data-term="bless">Bless</span>:</strong> Like ×2, removed after draw</li><li><strong><span class="ref" data-term="curse">Curse</span>:</strong> Like Null, removed after draw</li><li><strong><span class="ref" data-term="rolling-modifier">Rolling</span>:</strong> Keep drawing until non-rolling</li></ul><p>Shuffle at round end after drawing ×2/Null. Improve with <span class="ref" data-term="perk">Perks</span>.</p></div></li>
+</ul></section>
 
-    <section id="B" class="section"><div class="letter">B</div><ul class="list">
-        <li class="item"><span class="term" data-term="battle-goal">Battle Goal</span><div class="detail"><h3>Battle Goal</h3><span class="tag tag-page">p40</span><p>Secret personal objectives per scenario.</p><ul><li>Draw 2 at start, keep 1 secretly</li><li>Complete during successful scenario → earn checkmarks</li><li>3 checkmarks = 1 <span class="ref" data-term="perk">Perk</span></li></ul></div></li>
-        <li class="item"><span class="term" data-term="bless">Bless</span><div class="detail"><h3>Bless</h3><span class="tag tag-pos">Positive</span><span class="tag tag-page">p23</span><p>×2 card shuffled into <span class="ref" data-term="attack-modifier">modifier deck</span>.</p><ul><li>Not a condition—can't be removed by condition removal</li><li>Removed from game after drawing</li><li>Max 10 per deck</li></ul><p>Sources: <span class="ref" data-term="sanctuary">Sanctuary</span>, abilities, items.</p></div></li>
-        <li class="item"><span class="term" data-term="boss">Boss</span><div class="detail"><h3>Boss</h3><span class="tag tag-page">p33</span><p>Unique powerful enemies with special rules.</p><ul><li>NOT elites—"elite" abilities don't affect them</li><li>Own ability deck</li><li>Often immune to certain <span class="ref" data-term="conditions">conditions</span></li><li>"C" = number of characters</li></ul></div></li>
-    </ul></section>
+<section id="B" class="section"><div class="letter">B</div><ul class="list">
+    <li class="item"><span class="term" data-term="battle-goal">Battle Goal</span><div class="detail"><h3>Battle Goal</h3><span class="tag tag-page">p40</span><p>Secret personal objectives per scenario.</p><ul><li>Draw 2 at start, keep 1 secretly</li><li>Complete during successful scenario → earn checkmarks</li><li>3 checkmarks = 1 <span class="ref" data-term="perk">Perk</span></li></ul></div></li>
+    <li class="item"><span class="term" data-term="bless">Bless</span><div class="detail"><h3>Bless</h3><span class="tag tag-pos">Positive</span><span class="tag tag-page">p23</span><p>×2 card shuffled into <span class="ref" data-term="attack-modifier">modifier deck</span>.</p><ul><li>Not a condition—can't be removed by condition removal</li><li>Removed from game after drawing</li><li>Max 10 per deck</li></ul><p>Sources: <span class="ref" data-term="sanctuary">Sanctuary</span>, abilities, items.</p></div></li>
+    <li class="item"><span class="term" data-term="boss">Boss</span><div class="detail"><h3>Boss</h3><span class="tag tag-page">p33</span><p>Unique powerful enemies with special rules.</p><ul><li>NOT elites—"elite" abilities don't affect them</li><li>Own ability deck</li><li>Often immune to certain <span class="ref" data-term="conditions">conditions</span></li><li>"C" = number of characters</li></ul></div></li>
+</ul></section>
 
-    <section id="C" class="section"><div class="letter">C</div><ul class="list">
-        <li class="item"><span class="term" data-term="card-selection">Card Selection Phase</span><div class="detail"><h3>Card Selection Phase</h3><span class="tag tag-page">p16</span>
+<section id="C" class="section"><div class="letter">C</div><ul class="list">
+    <li class="item"><span class="term" data-term="card-selection">Card Selection Phase</span><div class="detail"><h3>Card Selection Phase</h3><span class="tag tag-page">p16</span>
+```
+
 <p>At the start of each round, all players simultaneously select which cards to play.</p>
 <p><strong>Options:</strong></p>
 <ul>
@@ -131,17 +153,20 @@
         <li class="item"><span class="term" data-term="curse">Curse</span><div class="detail"><h3>Curse</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p23</span><p>Null (×0) card shuffled into <span class="ref" data-term="attack-modifier">modifier deck</span>.</p><ul><li>Removed from game after drawing</li><li>Max 10 per deck</li><li>Even with immunity, already-present Curse still causes 0 damage</li></ul></div></li>
     </ul></section>
 
-    <section id="D" class="section"><div class="letter">D</div><ul class="list">
-        <li class="item"><span class="term" data-term="damage">Damage</span><div class="detail"><h3>Damage</h3><span class="tag tag-page">p28</span><p>When suffering damage, choose ONE:</p><ul><li>Take HP damage on dial (0 HP = <span class="ref" data-term="exhaustion">Exhausted</span>)</li><li>Lose 1 card from hand</li><li>Lose 2 cards from discard pile</li></ul><p>Can mix methods. May lose cards BEFORE using defensive items/abilities. Monsters/summons can't lose cards.</p></div></li>
-        <li class="item"><span class="term" data-term="difficult-terrain">Difficult Terrain</span><div class="detail"><h3>Difficult Terrain</h3><span class="tag tag-page">p14</span><p>Costs <strong>2 movement</strong> to enter (not leave).</p><p><span class="ref" data-term="jump">Jump</span> ignores except final hex. <span class="ref" data-term="flying">Flying</span> ignores entirely. <span class="ref" data-term="push">Push/Pull</span> moves through normally.</p></div></li>
-        <li class="item"><span class="term" data-term="disadvantage">Disadvantage</span><div class="detail"><h3>Disadvantage</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p20</span><p>Draw <strong>two</strong> <span class="ref" data-term="attack-modifier">modifiers</span>, use the <strong>worse</strong> one.</p><ul><li>Lower number is worse, Null worst, ×2 best</li><li>If ambiguous: use first card</li><li>One Rolling: ignore it entirely</li><li>Two Rolling: keep drawing, only LAST rolling effect applies</li></ul><p>Causes: <span class="ref" data-term="muddle">Muddle</span>, ranged attack on <span class="ref" data-term="adjacent">adjacent</span> enemy.</p></div></li>
-        <li class="item"><span class="term" data-term="disarm">Disarm</span><div class="detail"><h3>Disarm</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p23</span><p>Cannot perform <span class="ref" data-term="attack">Attack</span> abilities.</p><p>Immediate effect. Removed at end of turn. Disarmed monster still moves toward enemies.</p></div></li>
-        <li class="item"><span class="term" data-term="door">Door</span><div class="detail"><h3>Door</h3><span class="tag tag-page">p19</span><p><strong>Closed:</strong> Functions as wall. Only characters can open by moving onto it.</p><p><strong>When opened:</strong></p><ol><li>Reveal new room + monsters</li><li>Place monsters per player count</li><li>Randomize standee numbers</li><li>Draw Monster Ability Cards for new types</li><li>Monsters with lower initiative act after you</li></ol><p><strong>Open:</strong> Empty hex, move through freely.</p></div></li>
-    </ul></section>
+```
+<section id="D" class="section"><div class="letter">D</div><ul class="list">
+    <li class="item"><span class="term" data-term="damage">Damage</span><div class="detail"><h3>Damage</h3><span class="tag tag-page">p28</span><p>When suffering damage, choose ONE:</p><ul><li>Take HP damage on dial (0 HP = <span class="ref" data-term="exhaustion">Exhausted</span>)</li><li>Lose 1 card from hand</li><li>Lose 2 cards from discard pile</li></ul><p>Can mix methods. May lose cards BEFORE using defensive items/abilities. Monsters/summons can't lose cards.</p></div></li>
+    <li class="item"><span class="term" data-term="difficult-terrain">Difficult Terrain</span><div class="detail"><h3>Difficult Terrain</h3><span class="tag tag-page">p14</span><p>Costs <strong>2 movement</strong> to enter (not leave).</p><p><span class="ref" data-term="jump">Jump</span> ignores except final hex. <span class="ref" data-term="flying">Flying</span> ignores entirely. <span class="ref" data-term="push">Push/Pull</span> moves through normally.</p></div></li>
+    <li class="item"><span class="term" data-term="disadvantage">Disadvantage</span><div class="detail"><h3>Disadvantage</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p20</span><p>Draw <strong>two</strong> <span class="ref" data-term="attack-modifier">modifiers</span>, use the <strong>worse</strong> one.</p><ul><li>Lower number is worse, Null worst, ×2 best</li><li>If ambiguous: use first card</li><li>One Rolling: ignore it entirely</li><li>Two Rolling: keep drawing, only LAST rolling effect applies</li></ul><p>Causes: <span class="ref" data-term="muddle">Muddle</span>, ranged attack on <span class="ref" data-term="adjacent">adjacent</span> enemy.</p></div></li>
+    <li class="item"><span class="term" data-term="disarm">Disarm</span><div class="detail"><h3>Disarm</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p23</span><p>Cannot perform <span class="ref" data-term="attack">Attack</span> abilities.</p><p>Immediate effect. Removed at end of turn. Disarmed monster still moves toward enemies.</p></div></li>
+    <li class="item"><span class="term" data-term="door">Door</span><div class="detail"><h3>Door</h3><span class="tag tag-page">p19</span><p><strong>Closed:</strong> Functions as wall. Only characters can open by moving onto it.</p><p><strong>When opened:</strong></p><ol><li>Reveal new room + monsters</li><li>Place monsters per player count</li><li>Randomize standee numbers</li><li>Draw Monster Ability Cards for new types</li><li>Monsters with lower initiative act after you</li></ol><p><strong>Open:</strong> Empty hex, move through freely.</p></div></li>
+</ul></section>
 
-    <section id="E" class="section"><div class="letter">E</div><ul class="list">
-        <li class="item"><span class="term" data-term="elements">Elements</span><div class="detail"><h3>Elements</h3><span class="tag tag-page">p23-24</span><p>Six elements: Fire, Ice, Air, Earth, Light, Dark. Tracked on Element Board.</p><p><strong>States:</strong> Inert (not available) → Waning (available) → Strong (fully available)</p><p><strong>Infusing (creating):</strong></p><ul><li>Perform ability with element icon → element goes to Strong</li><li>Happens at END of your turn</li><li>Cannot infuse AND consume same turn</li></ul><p><strong>Consuming:</strong></p><ul><li>Element at Strong or Waning can be consumed for bonus effects</li><li>Consumed element goes to Inert</li><li>Optional—can skip the bonus</li></ul><p><strong>End of Round:</strong> All elements shift left (Strong→Waning→Inert).</p></div></li>
-        <li class="item"><span class="term" data-term="end-of-round">End of Round</span><div class="detail"><h3>End of Round</h3><span class="tag tag-page">p29</span>
+<section id="E" class="section"><div class="letter">E</div><ul class="list">
+    <li class="item"><span class="term" data-term="elements">Elements</span><div class="detail"><h3>Elements</h3><span class="tag tag-page">p23-24</span><p>Six elements: Fire, Ice, Air, Earth, Light, Dark. Tracked on Element Board.</p><p><strong>States:</strong> Inert (not available) → Waning (available) → Strong (fully available)</p><p><strong>Infusing (creating):</strong></p><ul><li>Perform ability with element icon → element goes to Strong</li><li>Happens at END of your turn</li><li>Cannot infuse AND consume same turn</li></ul><p><strong>Consuming:</strong></p><ul><li>Element at Strong or Waning can be consumed for bonus effects</li><li>Consumed element goes to Inert</li><li>Optional—can skip the bonus</li></ul><p><strong>End of Round:</strong> All elements shift left (Strong→Waning→Inert).</p></div></li>
+    <li class="item"><span class="term" data-term="end-of-round">End of Round</span><div class="detail"><h3>End of Round</h3><span class="tag tag-page">p29</span>
+```
+
 <p>After all figures have taken their turns, perform these steps in order:</p>
 <ol>
     <li><strong>Trigger end-of-round effects:</strong> Any abilities that say "at end of round" trigger now</li>
@@ -176,9 +201,12 @@
 <div class="note">XP gained during a scenario counts even if you become <span class="ref" data-term="exhaustion">Exhausted</span> or the scenario fails.</div></div></li>
     </ul></section>
 
-    <section id="F" class="section"><div class="letter">F</div><ul class="list">
-        <li class="item"><span class="term" data-term="flying">Flying</span><div class="detail"><h3>Flying</h3><span class="tag tag-page">p19</span><p>Ignores figures, <span class="ref" data-term="trap">traps</span>, <span class="ref" data-term="hazardous-terrain">hazards</span>, <span class="ref" data-term="difficult-terrain">difficult terrain</span>, obstacles during movement.</p><ul><li>Must end in unoccupied hex</li><li>Can end on trap/obstacle if you have permanent Flying</li><li>Lose Flying while on obstacle? Take damage, move to nearest empty hex</li></ul></div></li>
-        <li class="item"><span class="term" data-term="figure">Figure</span><div class="detail"><h3>Figure</h3>
+```
+<section id="F" class="section"><div class="letter">F</div><ul class="list">
+    <li class="item"><span class="term" data-term="flying">Flying</span><div class="detail"><h3>Flying</h3><span class="tag tag-page">p19</span><p>Ignores figures, <span class="ref" data-term="trap">traps</span>, <span class="ref" data-term="hazardous-terrain">hazards</span>, <span class="ref" data-term="difficult-terrain">difficult terrain</span>, obstacles during movement.</p><ul><li>Must end in unoccupied hex</li><li>Can end on trap/obstacle if you have permanent Flying</li><li>Lose Flying while on obstacle? Take damage, move to nearest empty hex</li></ul></div></li>
+    <li class="item"><span class="term" data-term="figure">Figure</span><div class="detail"><h3>Figure</h3>
+```
+
 <p>Any playing piece on the map: characters, monsters, summons, and scenario allies.</p>
 <p><strong>Types of figures:</strong></p>
 <ul>
@@ -190,8 +218,11 @@
 <p>All figures can occupy hexes, be targeted, and block movement (except when using <span class="ref" data-term="flying">Flying</span> or <span class="ref" data-term="jump">Jump</span>).</p></div></li>
     </ul></section>
 
-    <section id="G" class="section"><div class="letter">G</div><ul class="list">
-        <li class="item"><span class="term" data-term="gold">Gold</span><div class="detail"><h3>Gold</h3><span class="tag tag-page">p27, p43</span>
+```
+<section id="G" class="section"><div class="letter">G</div><ul class="list">
+    <li class="item"><span class="term" data-term="gold">Gold</span><div class="detail"><h3>Gold</h3><span class="tag tag-page">p27, p43</span>
+```
+
 <p>Gold is the currency used to buy <span class="ref" data-term="items">items</span> and make donations.</p>
 <p><strong>Gaining Gold:</strong></p>
 <ul>
@@ -210,24 +241,27 @@
 <div class="note warn">Gold is personal—you cannot trade gold with other players!</div></div></li>
     </ul></section>
 
-    <section id="H" class="section"><div class="letter">H</div><ul class="list">
-        <li class="item"><span class="term" data-term="hazardous-terrain">Hazardous Terrain</span><div class="detail"><h3>Hazardous Terrain</h3><span class="tag tag-page">p14</span><p>Deals damage when entered: <span class="formula">(2 + Level) ÷ 2</span> rounded down.</p><ul><li>Tile stays after triggering (unlike <span class="ref" data-term="trap">traps</span>)</li><li><span class="ref" data-term="flying">Flying</span> ignores it</li><li><span class="ref" data-term="jump">Jump</span> ignores except destination</li></ul></div></li>
-        <li class="item"><span class="term" data-term="heal">Heal</span><div class="detail"><h3>Heal X</h3><span class="tag tag-page">p26</span><p>Restore X HP to a figure.</p><ul><li><strong>Heal Self:</strong> Only yourself</li><li><strong>Heal Range Y:</strong> Self OR one ally in range + <span class="ref" data-term="line-of-sight">LOS</span></li></ul><p><strong>With conditions:</strong></p><ul><li><span class="ref" data-term="wound">Wound</span> only: Remove Wound + restore HP</li><li><span class="ref" data-term="poison">Poison</span> only: Remove Poison, NO HP restored</li><li>Both: Remove both, NO HP restored</li></ul><div class="note"><span class="ref" data-term="long-rest">Long Rest</span> Heal follows same rules!</div></div></li>
-    </ul></section>
+```
+<section id="H" class="section"><div class="letter">H</div><ul class="list">
+    <li class="item"><span class="term" data-term="hazardous-terrain">Hazardous Terrain</span><div class="detail"><h3>Hazardous Terrain</h3><span class="tag tag-page">p14</span><p>Deals damage when entered: <span class="formula">(2 + Level) ÷ 2</span> rounded down.</p><ul><li>Tile stays after triggering (unlike <span class="ref" data-term="trap">traps</span>)</li><li><span class="ref" data-term="flying">Flying</span> ignores it</li><li><span class="ref" data-term="jump">Jump</span> ignores except destination</li></ul></div></li>
+    <li class="item"><span class="term" data-term="heal">Heal</span><div class="detail"><h3>Heal X</h3><span class="tag tag-page">p26</span><p>Restore X HP to a figure.</p><ul><li><strong>Heal Self:</strong> Only yourself</li><li><strong>Heal Range Y:</strong> Self OR one ally in range + <span class="ref" data-term="line-of-sight">LOS</span></li></ul><p><strong>With conditions:</strong></p><ul><li><span class="ref" data-term="wound">Wound</span> only: Remove Wound + restore HP</li><li><span class="ref" data-term="poison">Poison</span> only: Remove Poison, NO HP restored</li><li>Both: Remove both, NO HP restored</li></ul><div class="note"><span class="ref" data-term="long-rest">Long Rest</span> Heal follows same rules!</div></div></li>
+</ul></section>
 
-    <section id="I" class="section"><div class="letter">I</div><ul class="list">
-        <li class="item"><span class="term" data-term="immobilize">Immobilize</span><div class="detail"><h3>Immobilize</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p22</span><p>Cannot perform <span class="ref" data-term="move">Move</span> abilities.</p><p>Can still be pushed/pulled. Teleport isn't Move so works. Removed at end of turn.</p></div></li>
-        <li class="item"><span class="term" data-term="initiative">Initiative</span><div class="detail"><h3>Initiative</h3><span class="tag tag-page">p18</span><p>Determines turn order. Lower number goes first.</p><ul><li>Characters: Number on leading card</li><li>Monsters: Number on Monster Ability Card</li><li><span class="ref" data-term="long-rest">Long Rest</span>: Initiative 99</li></ul><p><strong>Same monster type:</strong> Elites before normals, then by standee number.</p><p><strong>Ties:</strong> Character before monster. Characters compare non-leading cards. Players choose for monsters.</p><p><span class="ref" data-term="summon">Summons</span> act immediately before summoner.</p></div></li>
-        <li class="item"><span class="term" data-term="invisible">Invisible</span><div class="detail"><h3>Invisible</h3><span class="tag tag-pos">Positive</span><span class="tag tag-page">p23</span><p>Cannot be focused or targeted by enemies. Monsters treat you as obstacle.</p><p><strong>Still works against Invisible:</strong></p><ul><li><span class="ref" data-term="retaliate">Retaliate</span> (not targeted)</li><li><span class="ref" data-term="trap">Traps</span> and <span class="ref" data-term="hazardous-terrain">hazards</span></li></ul><p>Removed at end of turn.</p></div></li>
-        <li class="item"><span class="term" data-term="items">Items</span><div class="detail"><h3>Items</h3><span class="tag tag-page">p8, p28</span><p><strong>Slots:</strong> Head, Body, Legs, Two Hands (or 2× One Hand), Small Items (half level, rounded up)</p><p><strong>Can't use if:</strong> <span class="ref" data-term="stun">Stunned</span>, item spent/consumed, during start/end of turn effects.</p><p><strong>Spend (⟲):</strong> Rotate card. Refresh with <span class="ref" data-term="long-rest">Long Rest</span>.</p><p><strong>Consume (✕):</strong> Flip facedown. Only special abilities recover consumed items.</p></div></li>
-    </ul></section>
+<section id="I" class="section"><div class="letter">I</div><ul class="list">
+    <li class="item"><span class="term" data-term="immobilize">Immobilize</span><div class="detail"><h3>Immobilize</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p22</span><p>Cannot perform <span class="ref" data-term="move">Move</span> abilities.</p><p>Can still be pushed/pulled. Teleport isn't Move so works. Removed at end of turn.</p></div></li>
+    <li class="item"><span class="term" data-term="initiative">Initiative</span><div class="detail"><h3>Initiative</h3><span class="tag tag-page">p18</span><p>Determines turn order. Lower number goes first.</p><ul><li>Characters: Number on leading card</li><li>Monsters: Number on Monster Ability Card</li><li><span class="ref" data-term="long-rest">Long Rest</span>: Initiative 99</li></ul><p><strong>Same monster type:</strong> Elites before normals, then by standee number.</p><p><strong>Ties:</strong> Character before monster. Characters compare non-leading cards. Players choose for monsters.</p><p><span class="ref" data-term="summon">Summons</span> act immediately before summoner.</p></div></li>
+    <li class="item"><span class="term" data-term="invisible">Invisible</span><div class="detail"><h3>Invisible</h3><span class="tag tag-pos">Positive</span><span class="tag tag-page">p23</span><p>Cannot be focused or targeted by enemies. Monsters treat you as obstacle.</p><p><strong>Still works against Invisible:</strong></p><ul><li><span class="ref" data-term="retaliate">Retaliate</span> (not targeted)</li><li><span class="ref" data-term="trap">Traps</span> and <span class="ref" data-term="hazardous-terrain">hazards</span></li></ul><p>Removed at end of turn.</p></div></li>
+    <li class="item"><span class="term" data-term="items">Items</span><div class="detail"><h3>Items</h3><span class="tag tag-page">p8, p28</span><p><strong>Slots:</strong> Head, Body, Legs, Two Hands (or 2× One Hand), Small Items (half level, rounded up)</p><p><strong>Can't use if:</strong> <span class="ref" data-term="stun">Stunned</span>, item spent/consumed, during start/end of turn effects.</p><p><strong>Spend (⟲):</strong> Rotate card. Refresh with <span class="ref" data-term="long-rest">Long Rest</span>.</p><p><strong>Consume (✕):</strong> Flip facedown. Only special abilities recover consumed items.</p></div></li>
+</ul></section>
 
-    <section id="J" class="section"><div class="letter">J</div><ul class="list">
-        <li class="item"><span class="term" data-term="jump">Jump</span><div class="detail"><h3>Jump</h3><span class="tag tag-page">p19</span><p>Ignores figures, <span class="ref" data-term="trap">traps</span>, <span class="ref" data-term="hazardous-terrain">hazards</span>, terrain during movement.</p><ul><li>Final hex treated as normal movement (<span class="ref" data-term="difficult-terrain">Difficult</span> costs 2, traps trigger)</li><li>Must end in unoccupied hex</li><li>Can't end on obstacle</li></ul></div></li>
-    </ul></section>
+<section id="J" class="section"><div class="letter">J</div><ul class="list">
+    <li class="item"><span class="term" data-term="jump">Jump</span><div class="detail"><h3>Jump</h3><span class="tag tag-page">p19</span><p>Ignores figures, <span class="ref" data-term="trap">traps</span>, <span class="ref" data-term="hazardous-terrain">hazards</span>, terrain during movement.</p><ul><li>Final hex treated as normal movement (<span class="ref" data-term="difficult-terrain">Difficult</span> costs 2, traps trigger)</li><li>Must end in unoccupied hex</li><li>Can't end on obstacle</li></ul></div></li>
+</ul></section>
 
-    <section id="L" class="section"><div class="letter">L</div><ul class="list">
-        <li class="item"><span class="term" data-term="level">Level (Character)</span><div class="detail"><h3>Character Level</h3><span class="tag tag-page">p42-44</span>
+<section id="L" class="section"><div class="letter">L</div><ul class="list">
+    <li class="item"><span class="term" data-term="level">Level (Character)</span><div class="detail"><h3>Character Level</h3><span class="tag tag-page">p42-44</span>
+```
+
 <p>Your character's level determines their power and available abilities.</p>
 <p><strong>Level affects:</strong></p>
 <ul>
@@ -277,8 +311,11 @@
 <div class="note warn">Running out of cards causes <span class="ref" data-term="exhaustion">Exhaustion</span>! Each lost card brings you closer to being unable to continue.</div></div></li>
     </ul></section>
 
-    <section id="M" class="section"><div class="letter">M</div><ul class="list">
-        <li class="item"><span class="term" data-term="monster-ability-cards">Monster Ability Cards</span><div class="detail"><h3>Monster Ability Cards</h3><span class="tag tag-page">p29</span>
+```
+<section id="M" class="section"><div class="letter">M</div><ul class="list">
+    <li class="item"><span class="term" data-term="monster-ability-cards">Monster Ability Cards</span><div class="detail"><h3>Monster Ability Cards</h3><span class="tag tag-page">p29</span>
+```
+
 <p>Each monster type has its own deck of ability cards that determine what monsters of that type do each round.</p>
 <p><strong>Drawing Ability Cards:</strong></p>
 <ul>
@@ -420,8 +457,11 @@
 <p>The base modifier deck has exactly one Null card. This can't be removed, but <span class="ref" data-term="perk">Perks</span> that remove -2 cards effectively improve your odds.</p></div></li>
     </ul></section>
 
-    <section id="O" class="section"><div class="letter">O</div><ul class="list">
-        <li class="item"><span class="term" data-term="obstacle">Obstacle</span><div class="detail"><h3>Obstacle</h3><span class="tag tag-page">p14</span>
+```
+<section id="O" class="section"><div class="letter">O</div><ul class="list">
+    <li class="item"><span class="term" data-term="obstacle">Obstacle</span><div class="detail"><h3>Obstacle</h3><span class="tag tag-page">p14</span>
+```
+
 <p>Obstacles are terrain features that block movement. Common examples: rocks, pillars, statues, tables, bookcases.</p>
 <p><strong>Movement Rules:</strong></p>
 <ul>
@@ -457,10 +497,13 @@
         <li class="item"><span class="term" data-term="push">Push / Pull</span><div class="detail"><h3>Push X / Pull X</h3><span class="tag tag-page">p22</span><p>Move target X hexes away from you (Push) or toward you (Pull).</p><ul><li>If you apply it, MUST use full distance unless blocked</li><li>Can't push through/into figures, obstacles, walls</li><li>CAN push through/into <span class="ref" data-term="difficult-terrain">Difficult</span>, <span class="ref" data-term="trap">traps</span>, <span class="ref" data-term="hazardous-terrain">hazards</span></li><li>Non-flying targets trigger traps/hazards when pushed in</li></ul><p>Push/Pull is optional—can choose not to apply it at all.</p></div></li>
     </ul></section>
 
-    <section id="R" class="section"><div class="letter">R</div><ul class="list">
-        <li class="item"><span class="term" data-term="range">Range</span><div class="detail"><h3>Range</h3><span class="tag tag-page">p19</span><p>Count hexes between you and target, including target's hex.</p><p>Walls force you to count around (increases range). Most ranged abilities also require <span class="ref" data-term="line-of-sight">LOS</span>.</p></div></li>
-        <li class="item"><span class="term" data-term="retaliate">Retaliate</span><div class="detail"><h3>Retaliate X</h3><span class="tag tag-page">p26</span><p>Deal X damage back to attacker if they're in range (default Range 1, or specified Range Y).</p><p><strong>Triggers:</strong> After attack fully resolves, if retaliating figure survived, and attacker is in range.</p><p><strong>Does NOT trigger if:</strong></p><ul><li>Retaliating figure killed by attack</li><li>Attacker pushed out of range</li></ul><p><strong>DOES trigger if:</strong> Attacker pulled INTO range.</p><div class="note warn">Retaliate is NOT an attack: no modifier draw, <span class="ref" data-term="shield">Shield</span> doesn't reduce it, <span class="ref" data-term="poison">Poison</span> doesn't boost it.</div><p>Works vs <span class="ref" data-term="invisible">Invisible</span>. <span class="ref" data-term="stun">Stunned</span> figures with active Retaliate still retaliate.</p></div></li>
-        <li class="item"><span class="term" data-term="retirement">Retirement</span><div class="detail"><h3>Character Retirement</h3><span class="tag tag-page">p48</span>
+```
+<section id="R" class="section"><div class="letter">R</div><ul class="list">
+    <li class="item"><span class="term" data-term="range">Range</span><div class="detail"><h3>Range</h3><span class="tag tag-page">p19</span><p>Count hexes between you and target, including target's hex.</p><p>Walls force you to count around (increases range). Most ranged abilities also require <span class="ref" data-term="line-of-sight">LOS</span>.</p></div></li>
+    <li class="item"><span class="term" data-term="retaliate">Retaliate</span><div class="detail"><h3>Retaliate X</h3><span class="tag tag-page">p26</span><p>Deal X damage back to attacker if they're in range (default Range 1, or specified Range Y).</p><p><strong>Triggers:</strong> After attack fully resolves, if retaliating figure survived, and attacker is in range.</p><p><strong>Does NOT trigger if:</strong></p><ul><li>Retaliating figure killed by attack</li><li>Attacker pushed out of range</li></ul><p><strong>DOES trigger if:</strong> Attacker pulled INTO range.</p><div class="note warn">Retaliate is NOT an attack: no modifier draw, <span class="ref" data-term="shield">Shield</span> doesn't reduce it, <span class="ref" data-term="poison">Poison</span> doesn't boost it.</div><p>Works vs <span class="ref" data-term="invisible">Invisible</span>. <span class="ref" data-term="stun">Stunned</span> figures with active Retaliate still retaliate.</p></div></li>
+    <li class="item"><span class="term" data-term="retirement">Retirement</span><div class="detail"><h3>Character Retirement</h3><span class="tag tag-page">p48</span>
+```
+
 <p>When you complete your Personal Quest, your character retires from adventuring.</p>
 <p><strong>When Retirement Happens:</strong></p>
 <ul>
@@ -495,9 +538,12 @@
 <p>Repeat rounds until scenario ends (success or failure).</p></div></li>
     </ul></section>
 
-    <section id="S" class="section"><div class="letter">S</div><ul class="list">
-        <li class="item"><span class="term" data-term="sanctuary">Sanctuary</span><div class="detail"><h3>Sanctuary Donation</h3><span class="tag tag-page">p45</span><p>City activity: Pay 10 gold → add 2 <span class="ref" data-term="bless">Bless</span> cards to your deck.</p><p>Once per city visit, Campaign Mode only.</p></div></li>
-        <li class="item"><span class="term" data-term="scenario-level">Scenario Level</span><div class="detail"><h3>Scenario Level</h3><span class="tag tag-page">p15</span>
+```
+<section id="S" class="section"><div class="letter">S</div><ul class="list">
+    <li class="item"><span class="term" data-term="sanctuary">Sanctuary</span><div class="detail"><h3>Sanctuary Donation</h3><span class="tag tag-page">p45</span><p>City activity: Pay 10 gold → add 2 <span class="ref" data-term="bless">Bless</span> cards to your deck.</p><p>Once per city visit, Campaign Mode only.</p></div></li>
+    <li class="item"><span class="term" data-term="scenario-level">Scenario Level</span><div class="detail"><h3>Scenario Level</h3><span class="tag tag-page">p15</span>
+```
+
 <p>Determines difficulty, affecting monster stats, trap damage, gold earned, and bonus XP.</p>
 <p><strong>Calculating Level:</strong></p>
 <p><span class="formula">Average party level ÷ 2</span>, rounded up</p>
@@ -542,15 +588,18 @@
         <li class="item"><span class="term" data-term="summon">Summon</span><div class="detail"><h3>Summon</h3><span class="tag tag-page">p26</span><p>Create ally figure in empty <span class="ref" data-term="adjacent">adjacent</span> hex. No empty hex = summon fails.</p><p><strong>Behavior:</strong></p><ul><li>Acts on your <span class="ref" data-term="initiative">initiative</span>, immediately before you</li><li>Follows monster AI (not directly controlled)</li><li>Assumed ability: Move +0, Attack +0</li><li>Uses YOUR <span class="ref" data-term="attack-modifier">modifier</span> deck</li><li>Kill credit goes to you</li></ul><p><strong>Removed when:</strong> HP=0, summoner <span class="ref" data-term="exhaustion">exhausted</span>, summoning card recovered/lost.</p><p>Summons can't <span class="ref" data-term="loot">loot</span>.</p></div></li>
     </ul></section>
 
-    <section id="T" class="section"><div class="letter">T</div><ul class="list">
-        <li class="item"><span class="term" data-term="target">Target Z</span><div class="detail"><h3>Target Z</h3><span class="tag tag-page">p21</span><p>Can target up to Z different figures in <span class="ref" data-term="range">range</span> + <span class="ref" data-term="line-of-sight">LOS</span>.</p><p>Draw separate <span class="ref" data-term="attack-modifier">modifier</span> for each target. Bonuses apply to all targets.</p><p>On <span class="ref" data-term="area-of-effect">AoE</span>: adds Z-1 targets outside the pattern.</p></div></li>
-        <li class="item"><span class="term" data-term="trap">Trap</span><div class="detail"><h3>Trap</h3><span class="tag tag-page">p14</span><p>Triggers when entered, then removed from map.</p><p>Damage traps: <span class="formula">2 + Scenario Level</span></p><ul><li><span class="ref" data-term="flying">Flying</span> doesn't trigger traps</li><li><span class="ref" data-term="jump">Jump</span> ignores except destination</li><li><span class="ref" data-term="push">Pushing</span> non-flying figures into traps triggers them</li></ul><p>Player-created traps use ability card damage, not level formula.</p></div></li>
-    </ul></section>
+```
+<section id="T" class="section"><div class="letter">T</div><ul class="list">
+    <li class="item"><span class="term" data-term="target">Target Z</span><div class="detail"><h3>Target Z</h3><span class="tag tag-page">p21</span><p>Can target up to Z different figures in <span class="ref" data-term="range">range</span> + <span class="ref" data-term="line-of-sight">LOS</span>.</p><p>Draw separate <span class="ref" data-term="attack-modifier">modifier</span> for each target. Bonuses apply to all targets.</p><p>On <span class="ref" data-term="area-of-effect">AoE</span>: adds Z-1 targets outside the pattern.</p></div></li>
+    <li class="item"><span class="term" data-term="trap">Trap</span><div class="detail"><h3>Trap</h3><span class="tag tag-page">p14</span><p>Triggers when entered, then removed from map.</p><p>Damage traps: <span class="formula">2 + Scenario Level</span></p><ul><li><span class="ref" data-term="flying">Flying</span> doesn't trigger traps</li><li><span class="ref" data-term="jump">Jump</span> ignores except destination</li><li><span class="ref" data-term="push">Pushing</span> non-flying figures into traps triggers them</li></ul><p>Player-created traps use ability card damage, not level formula.</p></div></li>
+</ul></section>
 
-    <section id="W" class="section"><div class="letter">W</div><ul class="list">
-        <li class="item"><span class="term" data-term="wall">Wall</span><div class="detail"><h3>Wall</h3><p>Impassable barriers. Thick black lines between hexes or tile edges. Partial hexes are walls.</p><p>Blocks: All movement (even <span class="ref" data-term="flying">Flying</span>/<span class="ref" data-term="jump">Jump</span>), <span class="ref" data-term="line-of-sight">LOS</span>, <span class="ref" data-term="adjacent">adjacency</span>, direct <span class="ref" data-term="range">range</span> counting.</p></div></li>
-        <li class="item"><span class="term" data-term="wound">Wound</span><div class="detail"><h3>Wound</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p22</span><p>Suffer 1 damage at start of each turn. Can kill you if at 1 HP.</p><p>NOT removed at end of turn. Only <span class="ref" data-term="heal">Heal</span> removes it (HP still restored, unlike <span class="ref" data-term="poison">Poison</span>).</p><p>Wound + Poison + Heal: Remove both, NO HP restored.</p></div></li>
-    </ul></section>
+<section id="W" class="section"><div class="letter">W</div><ul class="list">
+    <li class="item"><span class="term" data-term="wall">Wall</span><div class="detail"><h3>Wall</h3><p>Impassable barriers. Thick black lines between hexes or tile edges. Partial hexes are walls.</p><p>Blocks: All movement (even <span class="ref" data-term="flying">Flying</span>/<span class="ref" data-term="jump">Jump</span>), <span class="ref" data-term="line-of-sight">LOS</span>, <span class="ref" data-term="adjacent">adjacency</span>, direct <span class="ref" data-term="range">range</span> counting.</p></div></li>
+    <li class="item"><span class="term" data-term="wound">Wound</span><div class="detail"><h3>Wound</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p22</span><p>Suffer 1 damage at start of each turn. Can kill you if at 1 HP.</p><p>NOT removed at end of turn. Only <span class="ref" data-term="heal">Heal</span> removes it (HP still restored, unlike <span class="ref" data-term="poison">Poison</span>).</p><p>Wound + Poison + Heal: Remove both, NO HP restored.</p></div></li>
+</ul></section>
+```
+
 </main>
 <button class="back-top">↑</button>
 <footer><p>Gloomhaven © Cephalofair Games | Inspired by <a href="https://sleeping-gods.rulepop.com">Rulepop</a></p></footer>
