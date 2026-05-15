@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Gloomhaven Rules Reference</title>
+    <title>Gloomhaven Regels Naslagwerk</title>
 
 <!-- PWA Meta Tags -->
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -70,13 +70,13 @@
 </head>
 <body>
 <header>
-    <div class="logo">Gloomhaven <span>Rules</span></div>
-    <p class="subtitle">Click any term for detailed explanation</p>
-    <div class="search-box"><input type="text" id="search" placeholder="Search rules..."></div>
+    <div class="logo">Gloomhaven <span>Regels</span></div>
+    <p class="subtitle">Klik op een term voor een gedetailleerde uitleg</p>
+    <div class="search-box"><input type="text" id="search" placeholder="Zoek regels..."></div>
 </header>
 <main>
     <section class="quick">
-        <div class="quick-title">Quick Access</div>
+        <div class="quick-title">Snelle Toegang</div>
         <div class="quick-grid">
             <span class="quick-btn" data-term="attack">⚔️ Attack</span>
             <span class="quick-btn" data-term="move">🏃 Move</span>
@@ -94,456 +94,456 @@
     </nav>
 
 <section id="A" class="section"><div class="letter">A</div><ul class="list">
-    <li class="item"><span class="term" data-term="active-bonus">Active Bonus</span><div class="detail"><h3>Active Bonus</h3><span class="tag tag-page">p25</span><p>Ability cards that stay in your <strong>Active Area</strong> with ongoing effects.</p><ul><li><strong>Persistent:</strong> Stays until all slots used or scenario ends. Place token on first slot, move each trigger.</li><li><strong>Round:</strong> Active until end of round, then goes to discard/lost.</li></ul><p>Cards in Active Area count as discarded/lost (depending on symbol). You can voluntarily end any active bonus by moving the card to discard/lost.</p></div></li>
-    <li class="item"><span class="term" data-term="advantage">Advantage</span><div class="detail"><h3>Advantage</h3><span class="tag tag-pos">Positive</span><span class="tag tag-page">p20</span><p>Draw <strong>two</strong> <span class="ref" data-term="attack-modifier">Attack Modifier</span> cards, use the <strong>better</strong> one.</p><p><strong>Which is better:</strong></p><ul><li>Higher number wins</li><li>×2 beats any number, Null loses to any number</li><li>Positive effects (elements, conditions) are better but undefined</li><li>If ambiguous: use first card drawn</li></ul><p><strong>With Rolling Modifiers:</strong></p><ul><li>One rolling + one normal: rolling adds to chosen card</li><li>Two rolling: keep drawing, all effects apply</li></ul><div class="note">Advantage + <span class="ref" data-term="disadvantage">Disadvantage</span> = cancel out, draw one card normally.</div><p>Main source: <span class="ref" data-term="strengthen">Strengthen</span> condition.</p></div></li>
-    <li class="item"><span class="term" data-term="adjacent">Adjacent</span><div class="detail"><h3>Adjacent</h3><p>Hexes sharing a border with no wall between them.</p><ul><li>Wall between = NOT adjacent</li><li>Closed <span class="ref" data-term="door">door</span> between = NOT adjacent</li><li>Only sharing corner = NOT adjacent</li><li>Flying figure on obstacle = NOT adjacent to that obstacle</li></ul></div></li>
-    <li class="item"><span class="term" data-term="ally">Ally</span><div class="detail"><h3>Ally</h3><p>Any figure on your side (other characters and their <span class="ref" data-term="summon">summons</span>).</p><div class="note warn"><strong>You are NOT your own ally!</strong></div><p>"Heal all allies" does NOT heal you. "All allies gain Shield" doesn't include you. Use "self" to mean yourself.</p></div></li>
-    <li class="item"><span class="term" data-term="area-of-effect">Area of Effect (AoE)</span><div class="detail"><h3>Area of Effect</h3><span class="tag tag-page">p21</span><p>Attacks affecting multiple hexes shown by a pattern.</p><ul><li><strong>Grey hex:</strong> Your position → Melee AoE</li><li><strong>Red hexes:</strong> Target hexes, always in range if attack is valid</li><li><strong>No grey:</strong> Ranged AoE, place pattern within range</li></ul><p>Can rotate/mirror pattern. MUST target all enemies in red hexes you have <span class="ref" data-term="line-of-sight">LOS</span> to. Draw separate <span class="ref" data-term="attack-modifier">modifier</span> per target. Allies never hit unless stated.</p></div></li>
-    <li class="item"><span class="term" data-term="attack">Attack</span><div class="detail"><h3>Attack X</h3><span class="tag tag-page">p19-22</span><p>Deal damage to enemies. <strong>Only "Attack" abilities are attacks</strong>—"deal/suffer damage" effects are different.</p><p><strong>Types:</strong></p><ul><li><strong>Melee:</strong> No Range = Range 1 (adjacent only)</li><li><strong>Ranged X:</strong> Up to X hexes with <span class="ref" data-term="line-of-sight">LOS</span></li></ul><p><strong>Steps:</strong></p><ol><li>Declare target(s) in range + LOS</li><li>Apply bonuses (+1 if target <span class="ref" data-term="poison">Poisoned</span>)</li><li>Draw <span class="ref" data-term="attack-modifier">modifier</span></li><li>Apply target's <span class="ref" data-term="shield">Shield</span></li><li>Deal damage + effects</li><li>Resolve <span class="ref" data-term="retaliate">Retaliate</span></li></ol><div class="note warn">Ranged attack on adjacent enemy = <span class="ref" data-term="disadvantage">Disadvantage</span></div><p>Can't attack while <span class="ref" data-term="disarm">Disarmed</span>. Null = 0 damage but effects still apply.</p></div></li>
-    <li class="item"><span class="term" data-term="attack-modifier">Attack Modifier Deck</span><div class="detail"><h3>Attack Modifier Deck</h3><span class="tag tag-page">p11</span><p>Draw a card for each <span class="ref" data-term="attack">attack</span> to modify damage.</p><p><strong>Standard deck (20):</strong> 6× +0, 5× +1, 5× -1, 1× +2, 1× -2, 1× ×2, 1× Null</p><p><strong>Special cards:</strong></p><ul><li><strong>Null (×0):</strong> 0 damage, but effects still apply</li><li><strong>×2:</strong> Double damage</li><li><strong><span class="ref" data-term="bless">Bless</span>:</strong> Like ×2, removed after draw</li><li><strong><span class="ref" data-term="curse">Curse</span>:</strong> Like Null, removed after draw</li><li><strong><span class="ref" data-term="rolling-modifier">Rolling</span>:</strong> Keep drawing until non-rolling</li></ul><p>Shuffle at round end after drawing ×2/Null. Improve with <span class="ref" data-term="perk">Perks</span>.</p></div></li>
+    <li class="item"><span class="term" data-term="active-bonus">Active Bonus</span><div class="detail"><h3>Active Bonus</h3><span class="tag tag-page">p25</span><p>Ability-kaarten die in je <strong>Active Area</strong> blijven liggen met doorlopende effecten.</p><ul><li><strong>Persistent:</strong> Blijft actief totdat alle vakjes gebruikt zijn of het scenario eindigt. Leg een token op het eerste vakje en verschuif het bij elke trigger.</li><li><strong>Round:</strong> Actief tot het einde van de ronde, dan naar de aflegstapel of verloren stapel.</li></ul><p>Kaarten in de Active Area tellen als afgelegd/verloren (afhankelijk van het symbool). Je kunt een active bonus vrijwillig beëindigen door de kaart naar de aflegstapel of verloren stapel te verplaatsen.</p></div></li>
+    <li class="item"><span class="term" data-term="advantage">Advantage</span><div class="detail"><h3>Advantage</h3><span class="tag tag-pos">Positive</span><span class="tag tag-page">p20</span><p>Trek <strong>twee</strong> <span class="ref" data-term="attack-modifier">Attack Modifier</span>-kaarten en gebruik de <strong>betere</strong>.</p><p><strong>Wat is beter:</strong></p><ul><li>Hogere waarde wint</li><li>×2 verslaat elke waarde, Null verliest van elke waarde</li><li>Positieve effecten (elementen, condities) zijn beter, maar ongedefinieerd onderling</li><li>Bij twijfel: gebruik de eerst getrokken kaart</li></ul><p><strong>Met Rolling Modifiers:</strong></p><ul><li>Eén rolling + één normaal: rolling telt op bij de gekozen kaart</li><li>Twee rolling: blijf trekken, alle effecten zijn van toepassing</li></ul><div class="note">Advantage + <span class="ref" data-term="disadvantage">Disadvantage</span> = heffen elkaar op, trek één kaart normaal.</div><p>Belangrijkste bron: <span class="ref" data-term="strengthen">Strengthen</span>-conditie.</p></div></li>
+    <li class="item"><span class="term" data-term="adjacent">Adjacent</span><div class="detail"><h3>Adjacent</h3><p>Hexes die een rand delen zonder muur ertussen.</p><ul><li>Muur ertussen = NIET adjacent</li><li>Gesloten <span class="ref" data-term="door">deur</span> ertussen = NIET adjacent</li><li>Alleen hoek delen = NIET adjacent</li><li>Vliegend figuur op een obstakel = NIET adjacent aan dat obstakel</li></ul></div></li>
+    <li class="item"><span class="term" data-term="ally">Ally</span><div class="detail"><h3>Ally</h3><p>Elk figuur aan jouw kant (andere personages en hun <span class="ref" data-term="summon">summons</span>).</p><div class="note warn"><strong>Jij bent NIET je eigen ally!</strong></div><p>"Heal all allies" healt jou NIET. "All allies gain Shield" sluit jou niet in. Gebruik "self" om jezelf te bedoelen.</p></div></li>
+    <li class="item"><span class="term" data-term="area-of-effect">Area of Effect (AoE)</span><div class="detail"><h3>Area of Effect</h3><span class="tag tag-page">p21</span><p>Aanvallen die meerdere hexes tegelijk treffen volgens een patroon.</p><ul><li><strong>Grijze hex:</strong> Jouw positie → Melee AoE</li><li><strong>Rode hexes:</strong> Doelwit-hexes, altijd binnen bereik als de aanval geldig is</li><li><strong>Geen grijs:</strong> Ranged AoE, plaats het patroon binnen bereik</li></ul><p>Je mag het patroon draaien en spiegelen. Je MOET alle vijanden in rode hexes aanvallen waarvoor je <span class="ref" data-term="line-of-sight">LOS</span> hebt. Trek een aparte <span class="ref" data-term="attack-modifier">modifier</span> per doelwit. Allies worden nooit geraakt tenzij expliciet vermeld.</p></div></li>
+    <li class="item"><span class="term" data-term="attack">Attack</span><div class="detail"><h3>Attack X</h3><span class="tag tag-page">p19-22</span><p>Richt schade aan bij vijanden. <strong>Alleen "Attack"-abilities zijn aanvallen</strong> — "deal/suffer damage"-effecten zijn anders.</p><p><strong>Soorten:</strong></p><ul><li><strong>Melee:</strong> Geen Range = Range 1 (alleen adjacent)</li><li><strong>Ranged X:</strong> Tot X hexes met <span class="ref" data-term="line-of-sight">LOS</span></li></ul><p><strong>Stappen:</strong></p><ol><li>Verklaar doelwit(ten) binnen bereik + LOS</li><li>Pas bonussen toe (+1 als doelwit <span class="ref" data-term="poison">Poisoned</span> is)</li><li>Trek <span class="ref" data-term="attack-modifier">modifier</span></li><li>Pas Shield van het doelwit toe (<span class="ref" data-term="shield">Shield</span>)</li><li>Richt schade aan + effecten</li><li>Verwerk <span class="ref" data-term="retaliate">Retaliate</span></li></ol><div class="note warn">Ranged aanval op een adjacent vijand = <span class="ref" data-term="disadvantage">Disadvantage</span></div><p>Kan niet aanvallen terwijl <span class="ref" data-term="disarm">Disarmed</span>. Null = 0 schade, maar effecten worden wel toegepast.</p></div></li>
+    <li class="item"><span class="term" data-term="attack-modifier">Attack Modifier Deck</span><div class="detail"><h3>Attack Modifier Deck</h3><span class="tag tag-page">p11</span><p>Trek een kaart bij elke <span class="ref" data-term="attack">aanval</span> om de schade aan te passen.</p><p><strong>Standaard deck (20):</strong> 6× +0, 5× +1, 5× -1, 1× +2, 1× -2, 1× ×2, 1× Null</p><p><strong>Speciale kaarten:</strong></p><ul><li><strong>Null (×0):</strong> 0 schade, maar effecten worden wel toegepast</li><li><strong>×2:</strong> Verdubbel de schade</li><li><strong><span class="ref" data-term="bless">Bless</span>:</strong> Werkt als ×2, wordt verwijderd na trekken</li><li><strong><span class="ref" data-term="curse">Curse</span>:</strong> Werkt als Null, wordt verwijderd na trekken</li><li><strong><span class="ref" data-term="rolling-modifier">Rolling</span>:</strong> Blijf trekken totdat een niet-rolling kaart verschijnt</li></ul><p>Schud het deck opnieuw aan het einde van de ronde na het trekken van ×2/Null. Verbeter het deck met <span class="ref" data-term="perk">Perks</span>.</p></div></li>
 </ul></section>
 
 <section id="B" class="section"><div class="letter">B</div><ul class="list">
-    <li class="item"><span class="term" data-term="battle-goal">Battle Goal</span><div class="detail"><h3>Battle Goal</h3><span class="tag tag-page">p40</span><p>Secret personal objectives per scenario.</p><ul><li>Draw 2 at start, keep 1 secretly</li><li>Complete during successful scenario → earn checkmarks</li><li>3 checkmarks = 1 <span class="ref" data-term="perk">Perk</span></li></ul></div></li>
-    <li class="item"><span class="term" data-term="bless">Bless</span><div class="detail"><h3>Bless</h3><span class="tag tag-pos">Positive</span><span class="tag tag-page">p23</span><p>×2 card shuffled into <span class="ref" data-term="attack-modifier">modifier deck</span>.</p><ul><li>Not a condition—can't be removed by condition removal</li><li>Removed from game after drawing</li><li>Max 10 per deck</li></ul><p>Sources: <span class="ref" data-term="sanctuary">Sanctuary</span>, abilities, items.</p></div></li>
-    <li class="item"><span class="term" data-term="boss">Boss</span><div class="detail"><h3>Boss</h3><span class="tag tag-page">p33</span><p>Unique powerful enemies with special rules.</p><ul><li>NOT elites—"elite" abilities don't affect them</li><li>Own ability deck</li><li>Often immune to certain <span class="ref" data-term="conditions">conditions</span></li><li>"C" = number of characters</li></ul></div></li>
+    <li class="item"><span class="term" data-term="battle-goal">Battle Goal</span><div class="detail"><h3>Battle Goal</h3><span class="tag tag-page">p40</span><p>Geheime persoonlijke doelstellingen per scenario.</p><ul><li>Trek er 2 aan het begin, houd er 1 geheim</li><li>Voltooi tijdens een succesvol scenario → verdien vinkjes</li><li>3 vinkjes = 1 <span class="ref" data-term="perk">Perk</span></li></ul></div></li>
+    <li class="item"><span class="term" data-term="bless">Bless</span><div class="detail"><h3>Bless</h3><span class="tag tag-pos">Positive</span><span class="tag tag-page">p23</span><p>×2-kaart geschud in het <span class="ref" data-term="attack-modifier">modifier deck</span>.</p><ul><li>Geen conditie — kan niet worden verwijderd door conditieverwijdering</li><li>Wordt uit het spel verwijderd na het trekken</li><li>Max. 10 per deck</li></ul><p>Bronnen: <span class="ref" data-term="sanctuary">Sanctuary</span>, abilities, items.</p></div></li>
+    <li class="item"><span class="term" data-term="boss">Boss</span><div class="detail"><h3>Boss</h3><span class="tag tag-page">p33</span><p>Unieke, krachtige vijanden met speciale regels.</p><ul><li>GEEN elites — "elite"-abilities hebben geen effect op hen</li><li>Eigen ability-deck</li><li>Vaak immuun voor bepaalde <span class="ref" data-term="conditions">condities</span></li><li>"C" = aantal personages</li></ul></div></li>
 </ul></section>
 
 <section id="C" class="section"><div class="letter">C</div><ul class="list">
     <li class="item"><span class="term" data-term="card-selection">Card Selection Phase</span><div class="detail"><h3>Card Selection Phase</h3><span class="tag tag-page">p16</span>
 
-<p>At the start of each round, all players simultaneously select which cards to play.</p>
-<p><strong>Options:</strong></p>
+<p>Aan het begin van elke ronde kiezen alle spelers tegelijkertijd welke kaarten ze spelen.</p>
+<p><strong>Opties:</strong></p>
 <ul>
-    <li><strong>Two Cards:</strong> Choose 2 ability cards from your hand. One will be your leading card (determines <span class="ref" data-term="initiative">initiative</span>).</li>
-    <li><strong><span class="ref" data-term="long-rest">Long Rest</span>:</strong> Instead of playing cards, declare you're resting (Initiative 99).</li>
+    <li><strong>Twee kaarten:</strong> Kies 2 ability-kaarten uit je hand. Eén wordt je leidende kaart (bepaalt de <span class="ref" data-term="initiative">initiative</span>).</li>
+    <li><strong><span class="ref" data-term="long-rest">Long Rest</span>:</strong> Verklaar dat je rust in plaats van kaarten te spelen (Initiative 99).</li>
 </ul>
-<p><strong>Communication Rules:</strong></p>
+<p><strong>Communicatieregels:</strong></p>
 <ul>
-    <li>✓ You CAN discuss general strategy ("I'll go early and tank")</li>
-    <li>✓ You CAN share your intentions ("I'll heal someone this round")</li>
-    <li>✗ You CANNOT reveal exact initiative numbers</li>
-    <li>✗ You CANNOT name specific cards you're playing</li>
+    <li>✓ Je MAG de algemene strategie bespreken ("Ik ga vroeg en tank")</li>
+    <li>✓ Je MAG je bedoelingen delen ("Ik ga iemand healen deze ronde")</li>
+    <li>✗ Je MAG NIET de exacte initiative-waarden onthullen</li>
+    <li>✗ Je MAG NIET specifieke kaarten benoemen die je speelt</li>
 </ul>
-<p>Once all players have selected, reveal initiatives and determine turn order.</p></div></li>
+<p>Zodra alle spelers gekozen hebben, onthul je de initiatives en bepaal je de beurtvolgorde.</p></div></li>
         <li class="item"><span class="term" data-term="character-turn">Character Turn</span><div class="detail"><h3>Character Turn Structure</h3><span class="tag tag-page">p18-19</span>
-<p>On your turn, perform the top action of one card and the bottom action of the other (in either order).</p>
-<p><strong>Turn Structure:</strong></p>
+<p>Voer in jouw beurt de bovenste actie van één kaart en de onderste actie van de andere kaart uit (in willekeurige volgorde).</p>
+<p><strong>Beurtstructuur:</strong></p>
 <ol>
-    <li><strong>Start of turn:</strong> Resolve any "start of turn" effects (like <span class="ref" data-term="wound">Wound</span> damage)</li>
-    <li><strong>Actions:</strong> Perform your two actions in any order</li>
-    <li><strong>End of turn:</strong> Loot your hex, resolve "end of turn" effects, remove expiring conditions</li>
+    <li><strong>Begin van de beurt:</strong> Verwerk "start of turn"-effecten (zoals <span class="ref" data-term="wound">Wound</span>-schade)</li>
+    <li><strong>Acties:</strong> Voer je twee acties uit in willekeurige volgorde</li>
+    <li><strong>Einde van de beurt:</strong> Loot je hex, verwerk "end of turn"-effecten, verwijder verlopende condities</li>
 </ol>
-<p><strong>Default Actions:</strong></p>
-<p>Instead of using a card's printed action, you can always use:</p>
+<p><strong>Standaard acties:</strong></p>
+<p>In plaats van de gedrukte actie van een kaart kun je altijd kiezen voor:</p>
 <ul>
-    <li><strong>Top:</strong> Attack 2 (melee)</li>
-    <li><strong>Bottom:</strong> Move 2</li>
+    <li><strong>Boven:</strong> Attack 2 (melee)</li>
+    <li><strong>Onder:</strong> Move 2</li>
 </ul>
-<p><strong>After Your Turn:</strong></p>
+<p><strong>Na je beurt:</strong></p>
 <ul>
-    <li>Non-lost cards go to your discard pile</li>
-    <li>Lost cards (🗙 symbol) go to your lost pile</li>
-    <li>Cards with active bonuses stay in your Active Area</li>
+    <li>Niet-verloren kaarten gaan naar je aflegstapel</li>
+    <li>Verloren kaarten (🗙 symbool) gaan naar je verloren stapel</li>
+    <li>Kaarten met active bonuses blijven in je Active Area</li>
 </ul></div></li>
-        <li class="item"><span class="term" data-term="conditions">Conditions (Overview)</span><div class="detail"><h3>Conditions</h3><span class="tag tag-page">p22-23</span><p>Status effects on figures. Most removed at end of affected figure's next turn.</p><p><strong>Negative:</strong></p><ul><li><span class="ref" data-term="poison">Poison</span> — +1 damage on attacks against you</li><li><span class="ref" data-term="wound">Wound</span> — 1 damage at start of turn</li><li><span class="ref" data-term="immobilize">Immobilize</span> — Can't Move</li><li><span class="ref" data-term="disarm">Disarm</span> — Can't Attack</li><li><span class="ref" data-term="stun">Stun</span> — Can't use abilities or items</li><li><span class="ref" data-term="muddle">Muddle</span> — Disadvantage on attacks</li><li><span class="ref" data-term="curse">Curse</span> — Null card in deck</li></ul><p><strong>Positive:</strong></p><ul><li><span class="ref" data-term="invisible">Invisible</span> — Can't be targeted</li><li><span class="ref" data-term="strengthen">Strengthen</span> — Advantage on attacks</li><li><span class="ref" data-term="bless">Bless</span> — ×2 card in deck</li></ul><div class="note">Poison/Wound only removed by <span class="ref" data-term="heal">Heal</span>. Applying a condition someone already has just refreshes its duration.</div></div></li>
-        <li class="item"><span class="term" data-term="curse">Curse</span><div class="detail"><h3>Curse</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p23</span><p>Null (×0) card shuffled into <span class="ref" data-term="attack-modifier">modifier deck</span>.</p><ul><li>Removed from game after drawing</li><li>Max 10 per deck</li><li>Even with immunity, already-present Curse still causes 0 damage</li></ul></div></li>
-        <li class="item"><span class="term" data-term="campaign">Campaign</span><div class="detail"><h3>Campaign</h3><span class="tag tag-page">p46-48</span><p>Persistent world where decisions carry over between scenarios.</p><p><strong>Includes:</strong></p><ul><li>City and road events between scenarios</li><li>Town prosperity level (1–9)</li><li>Character progression and retirement</li><li>Unlocking new scenarios and classes</li><li>Map stickers tracking world state</li></ul><p>Scenario outcomes affect which future scenarios and options are available.</p></div></li>
-        <li class="item"><span class="term" data-term="city-events">City Events</span><div class="detail"><h3>City Events</h3><span class="tag tag-page">p46</span><p>Draw and resolve 1 city event card between scenarios (after returning from the road).</p><ul><li>Two options (A/B) with different consequences</li><li>Outcomes can affect gold, items, prosperity, or unlock scenarios</li></ul></div></li>
-        <li class="item"><span class="term" data-term="coin-tokens">Coin Tokens</span><div class="detail"><h3>Coin Tokens</h3><span class="tag tag-page">p27</span><p>Money tokens placed on the map when monsters die.</p><ul><li>Automatically looted when you <strong>end your turn</strong> on them</li><li>Value × gold multiplier for the scenario level = gold earned</li><li>Tokens left on the map when the scenario ends are <strong>lost forever</strong></li></ul><p>See <span class="ref" data-term="scenario-level">Scenario Level</span> for the gold multiplier table.</p></div></li>
+        <li class="item"><span class="term" data-term="conditions">Conditions (Overview)</span><div class="detail"><h3>Conditions</h3><span class="tag tag-page">p22-23</span><p>Statuseffecten op figuren. De meeste worden verwijderd aan het einde van de volgende beurt van het getroffen figuur.</p><p><strong>Negatief:</strong></p><ul><li><span class="ref" data-term="poison">Poison</span> — +1 schade bij aanvallen op jou</li><li><span class="ref" data-term="wound">Wound</span> — 1 schade aan het begin van je beurt</li><li><span class="ref" data-term="immobilize">Immobilize</span> — Kan niet bewegen (Move)</li><li><span class="ref" data-term="disarm">Disarm</span> — Kan niet aanvallen (Attack)</li><li><span class="ref" data-term="stun">Stun</span> — Kan geen abilities of items gebruiken</li><li><span class="ref" data-term="muddle">Muddle</span> — Disadvantage op aanvallen</li><li><span class="ref" data-term="curse">Curse</span> — Null-kaart in het deck</li></ul><p><strong>Positief:</strong></p><ul><li><span class="ref" data-term="invisible">Invisible</span> — Kan niet als doelwit gekozen worden</li><li><span class="ref" data-term="strengthen">Strengthen</span> — Advantage op aanvallen</li><li><span class="ref" data-term="bless">Bless</span> — ×2-kaart in het deck</li></ul><div class="note">Poison/Wound worden alleen verwijderd door <span class="ref" data-term="heal">Heal</span>. Een conditie opleggen aan iemand die die al heeft, verlengt alleen de duur.</div></div></li>
+        <li class="item"><span class="term" data-term="curse">Curse</span><div class="detail"><h3>Curse</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p23</span><p>Null (×0)-kaart geschud in het <span class="ref" data-term="attack-modifier">modifier deck</span>.</p><ul><li>Wordt uit het spel verwijderd na het trekken</li><li>Max. 10 per deck</li><li>Zelfs met immuniteit veroorzaakt een al aanwezige Curse nog steeds 0 schade</li></ul></div></li>
+        <li class="item"><span class="term" data-term="campaign">Campaign</span><div class="detail"><h3>Campaign</h3><span class="tag tag-page">p46-48</span><p>Een aanhoudende wereld waarin beslissingen doorwerken tussen scenario's.</p><p><strong>Bevat:</strong></p><ul><li>Stad- en weg-events tussen scenario's</li><li>Welvaartsniveau van de stad (1–9)</li><li>Personageontwikkeling en pensionering</li><li>Ontgrendelen van nieuwe scenario's en klassen</li><li>Kaartsstickers die de toestand van de wereld bijhouden</li></ul><p>De uitkomsten van scenario's bepalen welke toekomstige scenario's en opties beschikbaar zijn.</p></div></li>
+        <li class="item"><span class="term" data-term="city-events">City Events</span><div class="detail"><h3>City Events</h3><span class="tag tag-page">p46</span><p>Trek en verwerk 1 stadsevementkaart tussen scenario's (na terugkeer van de weg).</p><ul><li>Twee opties (A/B) met verschillende gevolgen</li><li>Uitkomsten kunnen gold, items, welvaart beïnvloeden of scenario's ontgrendelen</li></ul></div></li>
+        <li class="item"><span class="term" data-term="coin-tokens">Coin Tokens</span><div class="detail"><h3>Coin Tokens</h3><span class="tag tag-page">p27</span><p>Geldtokens die op de kaart worden geplaatst wanneer monsters sterven.</p><ul><li>Automatisch geplunderd wanneer je <strong>je beurt beëindigt</strong> op een hex met tokens</li><li>Waarde × goudmultiplier voor het scenarioniveau = verdiend gold</li><li>Tokens die op de kaart liggen wanneer het scenario eindigt zijn <strong>voorgoed verloren</strong></li></ul><p>Zie <span class="ref" data-term="scenario-level">Scenario Level</span> voor de tabel met goudmultipliers.</p></div></li>
     </ul></section>
 
 <section id="D" class="section"><div class="letter">D</div><ul class="list">
-    <li class="item"><span class="term" data-term="damage">Damage</span><div class="detail"><h3>Damage</h3><span class="tag tag-page">p28</span><p>When suffering damage, choose ONE:</p><ul><li>Take HP damage on dial (0 HP = <span class="ref" data-term="exhaustion">Exhausted</span>)</li><li>Lose 1 card from hand</li><li>Lose 2 cards from discard pile</li></ul><p>Can mix methods. May lose cards BEFORE using defensive items/abilities. Monsters/summons can't lose cards.</p></div></li>
-    <li class="item"><span class="term" data-term="difficult-terrain">Difficult Terrain</span><div class="detail"><h3>Difficult Terrain</h3><span class="tag tag-page">p14</span><p>Costs <strong>2 movement</strong> to enter (not leave).</p><p><span class="ref" data-term="jump">Jump</span> ignores except final hex. <span class="ref" data-term="flying">Flying</span> ignores entirely. <span class="ref" data-term="push">Push/Pull</span> moves through normally.</p></div></li>
-    <li class="item"><span class="term" data-term="disadvantage">Disadvantage</span><div class="detail"><h3>Disadvantage</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p20</span><p>Draw <strong>two</strong> <span class="ref" data-term="attack-modifier">modifiers</span>, use the <strong>worse</strong> one.</p><ul><li>Lower number is worse, Null worst, ×2 best</li><li>If ambiguous: use first card</li><li>One Rolling: ignore it entirely</li><li>Two Rolling: keep drawing, only LAST rolling effect applies</li></ul><p>Causes: <span class="ref" data-term="muddle">Muddle</span>, ranged attack on <span class="ref" data-term="adjacent">adjacent</span> enemy.</p></div></li>
-    <li class="item"><span class="term" data-term="disarm">Disarm</span><div class="detail"><h3>Disarm</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p23</span><p>Cannot perform <span class="ref" data-term="attack">Attack</span> abilities.</p><p>Immediate effect. Removed at end of turn. Disarmed monster still moves toward enemies.</p></div></li>
-    <li class="item"><span class="term" data-term="door">Door</span><div class="detail"><h3>Door</h3><span class="tag tag-page">p19</span><p><strong>Closed:</strong> Functions as wall. Only characters can open by moving onto it.</p><p><strong>When opened:</strong></p><ol><li>Reveal new room + monsters</li><li>Place monsters per player count</li><li>Randomize standee numbers</li><li>Draw Monster Ability Cards for new types</li><li>Monsters with lower initiative act after you</li></ol><p><strong>Open:</strong> Empty hex, move through freely.</p></div></li>
+    <li class="item"><span class="term" data-term="damage">Damage</span><div class="detail"><h3>Damage</h3><span class="tag tag-page">p28</span><p>Wanneer je schade oploopt, kies ÉÉN van de volgende opties:</p><ul><li>Neem HP-schade op de wijzerplaat (0 HP = <span class="ref" data-term="exhaustion">Exhausted</span>)</li><li>Verlies 1 kaart uit je hand</li><li>Verlies 2 kaarten van je aflegstapel</li></ul><p>Je mag methoden combineren. Je mag kaarten verliezen VÓÓRDAT je defensieve items/abilities gebruikt. Monsters/summons kunnen geen kaarten verliezen.</p></div></li>
+    <li class="item"><span class="term" data-term="difficult-terrain">Difficult Terrain</span><div class="detail"><h3>Difficult Terrain</h3><span class="tag tag-page">p14</span><p>Kost <strong>2 beweging</strong> om te betreden (niet om te verlaten).</p><p><span class="ref" data-term="jump">Jump</span> negeert dit behalve voor de eindhex. <span class="ref" data-term="flying">Flying</span> negeert dit volledig. <span class="ref" data-term="push">Push/Pull</span> beweegt er normaal doorheen.</p></div></li>
+    <li class="item"><span class="term" data-term="disadvantage">Disadvantage</span><div class="detail"><h3>Disadvantage</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p20</span><p>Trek <strong>twee</strong> <span class="ref" data-term="attack-modifier">modifiers</span> en gebruik de <strong>slechtste</strong>.</p><ul><li>Lagere waarde is slechter, Null is het slechtst, ×2 is het best</li><li>Bij twijfel: gebruik de eerste kaart</li><li>Eén Rolling: negeer die volledig</li><li>Twee Rolling: blijf trekken, alleen het LAATSTE rolling-effect wordt toegepast</li></ul><p>Oorzaken: <span class="ref" data-term="muddle">Muddle</span>, ranged aanval op een <span class="ref" data-term="adjacent">adjacent</span> vijand.</p></div></li>
+    <li class="item"><span class="term" data-term="disarm">Disarm</span><div class="detail"><h3>Disarm</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p23</span><p>Kan geen <span class="ref" data-term="attack">Attack</span>-abilities uitvoeren.</p><p>Onmiddellijk effect. Wordt verwijderd aan het einde van de beurt. Een Disarmed monster beweegt nog wel naar vijanden.</p></div></li>
+    <li class="item"><span class="term" data-term="door">Door</span><div class="detail"><h3>Door</h3><span class="tag tag-page">p19</span><p><strong>Gesloten:</strong> Werkt als een muur. Alleen personages kunnen hem openen door erop te bewegen.</p><p><strong>Bij het openen:</strong></p><ol><li>Onthul nieuwe kamer + monsters</li><li>Plaats monsters op basis van het aantal spelers</li><li>Randomiseer standeenummers</li><li>Trek Monster Ability Cards voor nieuwe typen</li><li>Monsters met een lagere initiative handelen na jou</li></ol><p><strong>Open:</strong> Lege hex, vrij doorheen bewegen.</p></div></li>
 </ul></section>
 
 <section id="E" class="section"><div class="letter">E</div><ul class="list">
-    <li class="item"><span class="term" data-term="elements">Elements</span><div class="detail"><h3>Elements</h3><span class="tag tag-page">p23-24</span><p>Six elements: Fire, Ice, Air, Earth, Light, Dark. Tracked on Element Board.</p><p><strong>States:</strong> Inert (not available) → Waning (available) → Strong (fully available)</p><p><strong>Infusing (creating):</strong></p><ul><li>Perform ability with element icon → element goes to Strong</li><li>Happens at END of your turn</li><li>Cannot infuse AND consume same turn</li></ul><p><strong>Consuming:</strong></p><ul><li>Element at Strong or Waning can be consumed for bonus effects</li><li>Consumed element goes to Inert</li><li>Optional—can skip the bonus</li></ul><p><strong>End of Round:</strong> All elements shift left (Strong→Waning→Inert).</p></div></li>
+    <li class="item"><span class="term" data-term="elements">Elements</span><div class="detail"><h3>Elements</h3><span class="tag tag-page">p23-24</span><p>Zes elementen: Fire, Ice, Air, Earth, Light, Dark. Bijgehouden op het Element Board.</p><p><strong>Staten:</strong> Inert (niet beschikbaar) → Waning (beschikbaar) → Strong (volledig beschikbaar)</p><p><strong>Infusen (aanmaken):</strong></p><ul><li>Voer een ability uit met een elementpictogram → het element gaat naar Strong</li><li>Gebeurt aan het EINDE van je beurt</li><li>Je kunt hetzelfde element NIET infusen én consumeren in dezelfde beurt</li></ul><p><strong>Consumeren:</strong></p><ul><li>Een element op Strong of Waning kan worden geconsumeerd voor bonuseffecten</li><li>Geconsumeerd element gaat naar Inert</li><li>Optioneel — je kunt de bonus overslaan</li></ul><p><strong>Einde van de ronde:</strong> Alle elementen verschuiven één stap (Strong→Waning→Inert).</p></div></li>
     <li class="item"><span class="term" data-term="end-of-round">End of Round</span><div class="detail"><h3>End of Round</h3><span class="tag tag-page">p29</span>
 
-<p>After all figures have taken their turns, perform these steps in order:</p>
+<p>Nadat alle figuren hun beurt hebben gehad, voer je de volgende stappen in volgorde uit:</p>
 <ol>
-    <li><strong>Trigger end-of-round effects:</strong> Any abilities that say "at end of round" trigger now</li>
-    <li><strong>Remove round bonuses:</strong> Move any cards with round bonuses from Active Areas to discard/lost piles</li>
-    <li><strong>Short Rest:</strong> Characters may optionally take a <span class="ref" data-term="short-rest">Short Rest</span></li>
-    <li><strong>Shift elements:</strong> Move all elements one step toward Inert (Strong→Waning→Inert)</li>
-    <li><strong>Shuffle modifiers:</strong> If any <span class="ref" data-term="attack-modifier">modifier deck</span> drew a ×2 or Null, shuffle that deck now</li>
-    <li><strong>Collect ability cards:</strong> Return all Monster Ability Cards to their decks, shuffle if needed</li>
+    <li><strong>Activeer end-of-round-effecten:</strong> Alle abilities die "at end of round" zeggen, worden nu geactiveerd</li>
+    <li><strong>Verwijder round bonuses:</strong> Verplaats kaarten met round bonuses van Active Areas naar afleg-/verloren stapels</li>
+    <li><strong>Short Rest:</strong> Personages mogen optioneel een <span class="ref" data-term="short-rest">Short Rest</span> nemen</li>
+    <li><strong>Verschuif elementen:</strong> Beweeg alle elementen één stap richting Inert (Strong→Waning→Inert)</li>
+    <li><strong>Schud modifiers:</strong> Als een <span class="ref" data-term="attack-modifier">modifier deck</span> een ×2 of Null trok, schud dat deck nu</li>
+    <li><strong>Verzamel ability-kaarten:</strong> Leg alle Monster Ability Cards terug in hun decks, schud indien nodig</li>
 </ol>
-<p>After completing these steps, a new round begins with card selection.</p></div></li>
-        <li class="item"><span class="term" data-term="exhaustion">Exhaustion</span><div class="detail"><h3>Exhaustion</h3><span class="tag tag-page">p28</span><p>Character is out of the scenario when:</p><ul><li>HP reaches 0</li><li>Can't play 2 cards (Two Actions) or <span class="ref" data-term="long-rest">Long Rest</span></li></ul><p>Remove figure from map, no more turns. Still keep earned gold/XP.</p><div class="note warn">ALL characters exhausted = scenario lost!</div></div></li>
+<p>Na het voltooien van deze stappen begint een nieuwe ronde met kaartselectie.</p></div></li>
+        <li class="item"><span class="term" data-term="exhaustion">Exhaustion</span><div class="detail"><h3>Exhaustion</h3><span class="tag tag-page">p28</span><p>Een personage valt uit het scenario wanneer:</p><ul><li>HP bereikt 0</li><li>Niet in staat om 2 kaarten te spelen (Two Actions) of een <span class="ref" data-term="long-rest">Long Rest</span> te nemen</li></ul><p>Verwijder het figuur van de kaart, geen beurten meer. Je behoudt wel verdiend gold/XP.</p><div class="note warn">ALLE personages uitgeput = scenario verloren!</div></div></li>
         <li class="item"><span class="term" data-term="experience">Experience (XP)</span><div class="detail"><h3>Experience (XP)</h3><span class="tag tag-page">p27, p42</span>
-<p>Experience points allow your character to level up and gain new abilities.</p>
-<p><strong>Gaining XP during scenarios:</strong></p>
+<p>Ervaringspunten waarmee je personage een level omhoog kan gaan en nieuwe abilities kan verkrijgen.</p>
+<p><strong>XP verdienen tijdens scenario's:</strong></p>
 <ul>
-    <li><strong>Ability cards:</strong> Many cards have XP symbols—gain that XP when you perform the ability</li>
-    <li><strong>Scenario completion:</strong> Successful scenarios award bonus XP based on <span class="ref" data-term="scenario-level">scenario level</span></li>
-    <li><span class="ref" data-term="summon">Summons</span> using abilities with XP give that XP to the summoner</li>
+    <li><strong>Ability-kaarten:</strong> Veel kaarten hebben XP-symbolen — verdien die XP wanneer je de ability uitvoert</li>
+    <li><strong>Scenario voltooien:</strong> Succesvolle scenario's geven bonus-XP op basis van het <span class="ref" data-term="scenario-level">scenarioniveau</span></li>
+    <li><span class="ref" data-term="summon">Summons</span> die abilities met XP gebruiken, geven die XP aan de oproeper</li>
 </ul>
-<p><strong>XP and Leveling:</strong></p>
+<p><strong>XP en omhoog gaan:</strong></p>
 <ul>
-    <li>Track XP on your character sheet (XP is permanent, never lost)</li>
-    <li>When XP reaches the threshold for the next level, you level up between scenarios</li>
-    <li>Level thresholds: Lvl 2: 45 XP, Lvl 3: 95 XP, Lvl 4: 150 XP, Lvl 5: 210 XP, Lvl 6: 275 XP, Lvl 7: 345 XP, Lvl 8: 420 XP, Lvl 9: 500 XP</li>
+    <li>Houd XP bij op je karakterblad (XP is permanent, nooit verloren)</li>
+    <li>Wanneer XP de drempel voor het volgende level bereikt, ga je tussen scenario's omhoog</li>
+    <li>Leveldrempels: Lvl 2: 45 XP, Lvl 3: 95 XP, Lvl 4: 150 XP, Lvl 5: 210 XP, Lvl 6: 275 XP, Lvl 7: 345 XP, Lvl 8: 420 XP, Lvl 9: 500 XP</li>
 </ul>
-<p><strong>Level Up Benefits:</strong></p>
+<p><strong>Voordelen van level omhoog:</strong></p>
 <ul>
-    <li>Increase max HP (see character mat)</li>
-    <li>Choose 1 new ability card from your level or below</li>
-    <li>Gain 1 <span class="ref" data-term="perk">Perk</span></li>
+    <li>Verhoog max. HP (zie karaktermat)</li>
+    <li>Kies 1 nieuwe ability-kaart van jouw level of lager</li>
+    <li>Verkrijg 1 <span class="ref" data-term="perk">Perk</span></li>
 </ul>
-<div class="note">XP gained during a scenario counts even if you become <span class="ref" data-term="exhaustion">Exhausted</span> or the scenario fails.</div></div></li>
-        <li class="item"><span class="term" data-term="enhancement">Enhancement</span><div class="detail"><h3>Enhancement</h3><span class="tag tag-page">p44-45</span><p>Permanently improve an ability card at the Enhancement Shop in campaign mode.</p><ul><li>Cost depends on the type of enhancement and the card's level</li><li>A sticker is placed directly on the card</li><li>The enhancement stays with the character forever — even after retirement</li></ul><div class="note">Enhancements are one of the most powerful long-term investments in the game. Plan them carefully as costs increase for higher-level cards.</div></div></li>
+<div class="note">XP verdiend tijdens een scenario telt mee, ook als je <span class="ref" data-term="exhaustion">Exhausted</span> raakt of het scenario mislukt.</div></div></li>
+        <li class="item"><span class="term" data-term="enhancement">Enhancement</span><div class="detail"><h3>Enhancement</h3><span class="tag tag-page">p44-45</span><p>Verbeter een ability-kaart permanent in de Enhancement Shop in campagnemodus.</p><ul><li>De kosten hangen af van het type verbetering en het level van de kaart</li><li>Een sticker wordt direct op de kaart geplakt</li><li>De verbetering blijft voor altijd bij het personage — ook na pensionering</li></ul><div class="note">Enhancements zijn een van de krachtigste langetermijninvesteringen in het spel. Plan ze zorgvuldig, want de kosten stijgen voor kaarten van hogere levels.</div></div></li>
     </ul></section>
 
 <section id="F" class="section"><div class="letter">F</div><ul class="list">
-    <li class="item"><span class="term" data-term="flying">Flying</span><div class="detail"><h3>Flying</h3><span class="tag tag-page">p19</span><p>Ignores figures, <span class="ref" data-term="trap">traps</span>, <span class="ref" data-term="hazardous-terrain">hazards</span>, <span class="ref" data-term="difficult-terrain">difficult terrain</span>, obstacles during movement.</p><ul><li>Must end in unoccupied hex</li><li>Can end on trap/obstacle if you have permanent Flying</li><li>Lose Flying while on obstacle? Take damage, move to nearest empty hex</li></ul></div></li>
+    <li class="item"><span class="term" data-term="flying">Flying</span><div class="detail"><h3>Flying</h3><span class="tag tag-page">p19</span><p>Negeert figuren, <span class="ref" data-term="trap">vallen</span>, <span class="ref" data-term="hazardous-terrain">gevaarlijk terrein</span>, <span class="ref" data-term="difficult-terrain">moeilijk terrein</span> en obstakels tijdens beweging.</p><ul><li>Moet eindigen op een onbezette hex</li><li>Mag eindigen op een val/obstakel bij permanent Flying</li><li>Flying verliezen terwijl op een obstakel? Neem schade, beweeg naar de dichtstbijzijnde lege hex</li></ul></div></li>
     <li class="item"><span class="term" data-term="figure">Figure</span><div class="detail"><h3>Figure</h3>
 
-<p>Any playing piece on the map: characters, monsters, summons, and scenario allies.</p>
-<p><strong>Types of figures:</strong></p>
+<p>Elk speelstuk op de kaart: personages, monsters, summons en scenario-bondgenoten.</p>
+<p><strong>Soorten figuren:</strong></p>
 <ul>
-    <li><strong>Characters:</strong> Player-controlled heroes</li>
-    <li><strong>Monsters:</strong> Enemies controlled by AI, including <span class="ref" data-term="boss">bosses</span></li>
-    <li><strong>Summons:</strong> Allies created by abilities, follow monster AI</li>
-    <li><strong>Scenario Allies:</strong> NPCs that help in specific scenarios</li>
+    <li><strong>Personages:</strong> Door spelers bestuurde helden</li>
+    <li><strong>Monsters:</strong> Vijanden bestuurd door AI, inclusief <span class="ref" data-term="boss">bosses</span></li>
+    <li><strong>Summons:</strong> Bondgenoten aangemaakt door abilities, volgen monster-AI</li>
+    <li><strong>Scenario-bondgenoten:</strong> NPC's die helpen in specifieke scenario's</li>
 </ul>
-<p>All figures can occupy hexes, be targeted, and block movement (except when using <span class="ref" data-term="flying">Flying</span> or <span class="ref" data-term="jump">Jump</span>).</p></div></li>
+<p>Alle figuren kunnen hexes bezetten, als doelwit worden gekozen en beweging blokkeren (behalve bij gebruik van <span class="ref" data-term="flying">Flying</span> of <span class="ref" data-term="jump">Jump</span>).</p></div></li>
     </ul></section>
 
 <section id="G" class="section"><div class="letter">G</div><ul class="list">
-    <li class="item"><span class="term" data-term="gold-conversion">Gold Conversion</span><div class="detail"><h3>Gold Conversion</h3><span class="tag tag-page">p27</span><p>Na afloop van een succesvol scenario worden looted <span class="ref" data-term="coin-tokens">coin tokens</span> omgezet naar gold.</p><p><strong>Formule:</strong></p><p><span class="formula">Coin waarde × goud-multiplier = gold</span></p><p><strong>Multipliers per scenario level:</strong></p><table style="width:100%;margin:0.5rem 0;border-collapse:collapse;font-size:0.9rem;"><tr style="border-bottom:1px solid var(--border);"><th style="padding:0.3rem;text-align:left;color:var(--gold);">Level</th><th style="padding:0.3rem;">Multiplier</th></tr><tr><td style="padding:0.3rem;">0–1</td><td style="padding:0.3rem;">×2</td></tr><tr><td style="padding:0.3rem;">2–3</td><td style="padding:0.3rem;">×3</td></tr><tr><td style="padding:0.3rem;">4–5</td><td style="padding:0.3rem;">×4</td></tr><tr><td style="padding:0.3rem;">6–7</td><td style="padding:0.3rem;">×5</td></tr></table><p><strong>Voorbeeld:</strong> Je lootte 3 coins à waarde 2 op scenario level 3 → 3 × 2 × 3 = <strong>18 gold</strong>.</p><div class="note warn">Tokens die op de grond liggen als het scenario eindigt zijn voorgoed verloren — loot ze altijd voor het doel wordt bereikt!</div></div></li>
+    <li class="item"><span class="term" data-term="gold-conversion">Gold Conversion</span><div class="detail"><h3>Gold Conversion</h3><span class="tag tag-page">p27</span><p>Na afloop van een succesvol scenario worden geplunderde <span class="ref" data-term="coin-tokens">coin tokens</span> omgezet naar gold.</p><p><strong>Formule:</strong></p><p><span class="formula">Coin waarde × goudmultiplier = gold</span></p><p><strong>Multipliers per scenarioniveau:</strong></p><table style="width:100%;margin:0.5rem 0;border-collapse:collapse;font-size:0.9rem;"><tr style="border-bottom:1px solid var(--border);"><th style="padding:0.3rem;text-align:left;color:var(--gold);">Niveau</th><th style="padding:0.3rem;">Multiplier</th></tr><tr><td style="padding:0.3rem;">0–1</td><td style="padding:0.3rem;">×2</td></tr><tr><td style="padding:0.3rem;">2–3</td><td style="padding:0.3rem;">×3</td></tr><tr><td style="padding:0.3rem;">4–5</td><td style="padding:0.3rem;">×4</td></tr><tr><td style="padding:0.3rem;">6–7</td><td style="padding:0.3rem;">×5</td></tr></table><p><strong>Voorbeeld:</strong> Je plunderde 3 coins met waarde 2 op scenarioniveau 3 → 3 × 2 × 3 = <strong>18 gold</strong>.</p><div class="note warn">Tokens die op de grond liggen als het scenario eindigt zijn voorgoed verloren — loot ze altijd vóórdat het doel bereikt wordt!</div></div></li>
     <li class="item"><span class="term" data-term="gold">Gold</span><div class="detail"><h3>Gold</h3><span class="tag tag-page">p27, p43</span>
 
-<p>Gold is the currency used to buy <span class="ref" data-term="items">items</span> and make donations.</p>
-<p><strong>Gaining Gold:</strong></p>
+<p>Gold is de valuta waarmee je <span class="ref" data-term="items">items</span> koopt en donaties doet.</p>
+<p><strong>Gold verdienen:</strong></p>
 <ul>
-    <li><strong>Looting money tokens:</strong> Each token = (token value) × (gold multiplier for <span class="ref" data-term="scenario-level">scenario level</span>)</li>
-    <li><strong>Selling items:</strong> Sell for half purchase price (rounded down)</li>
-    <li><strong>Scenario rewards:</strong> Some scenarios grant bonus gold</li>
+    <li><strong>Geldtokens plunderen:</strong> Elke token = (tokenwaarde) × (goudmultiplier voor <span class="ref" data-term="scenario-level">scenarioniveau</span>)</li>
+    <li><strong>Items verkopen:</strong> Verkoop voor de helft van de aankoopprijs (naar beneden afgerond)</li>
+    <li><strong>Scenariobeloningen:</strong> Sommige scenario's geven bonus gold</li>
 </ul>
-<p><strong>Gold Multipliers by Level:</strong></p>
-<p>Level 0-1: ×2 | Level 2-3: ×3 | Level 4-5: ×4 | Level 6-7: ×5</p>
-<p><strong>Spending Gold:</strong></p>
+<p><strong>Goudmultipliers per niveau:</strong></p>
+<p>Niveau 0-1: ×2 | Niveau 2-3: ×3 | Niveau 4-5: ×4 | Niveau 6-7: ×5</p>
+<p><strong>Gold uitgeven:</strong></p>
 <ul>
-    <li>Buy items at the shop (between scenarios)</li>
-    <li>Donate to <span class="ref" data-term="sanctuary">Sanctuary</span> (10 gold for 2 <span class="ref" data-term="bless">Bless</span>)</li>
-    <li>Enhance ability cards (permanent upgrades)</li>
+    <li>Koop items in de winkel (tussen scenario's)</li>
+    <li>Doneer aan de <span class="ref" data-term="sanctuary">Sanctuary</span> (10 gold voor 2 <span class="ref" data-term="bless">Bless</span>)</li>
+    <li>Verbeter ability-kaarten (permanente upgrades)</li>
 </ul>
-<div class="note warn">Gold is personal—you cannot trade gold with other players!</div></div></li>
+<div class="note warn">Gold is persoonlijk — je kunt geen gold ruilen met andere spelers!</div></div></li>
     </ul></section>
 
 <section id="H" class="section"><div class="letter">H</div><ul class="list">
-    <li class="item"><span class="term" data-term="hazardous-terrain">Hazardous Terrain</span><div class="detail"><h3>Hazardous Terrain</h3><span class="tag tag-page">p14</span><p>Deals damage when entered: <span class="formula">(2 + Level) ÷ 2</span> rounded down.</p><ul><li>Tile stays after triggering (unlike <span class="ref" data-term="trap">traps</span>)</li><li><span class="ref" data-term="flying">Flying</span> ignores it</li><li><span class="ref" data-term="jump">Jump</span> ignores except destination</li></ul></div></li>
-    <li class="item"><span class="term" data-term="heal">Heal</span><div class="detail"><h3>Heal X</h3><span class="tag tag-page">p26</span><p>Restore X HP to a figure.</p><ul><li><strong>Heal Self:</strong> Only yourself</li><li><strong>Heal Range Y:</strong> Self OR one ally in range + <span class="ref" data-term="line-of-sight">LOS</span></li></ul><p><strong>With conditions:</strong></p><ul><li><span class="ref" data-term="wound">Wound</span> only: Remove Wound + restore HP</li><li><span class="ref" data-term="poison">Poison</span> only: Remove Poison, NO HP restored</li><li>Both: Remove both, NO HP restored</li></ul><div class="note"><span class="ref" data-term="long-rest">Long Rest</span> Heal follows same rules!</div></div></li>
+    <li class="item"><span class="term" data-term="hazardous-terrain">Hazardous Terrain</span><div class="detail"><h3>Hazardous Terrain</h3><span class="tag tag-page">p14</span><p>Richt schade aan wanneer betreden: <span class="formula">(2 + Niveau) ÷ 2</span>, naar beneden afgerond.</p><ul><li>Tegel blijft na activering (in tegenstelling tot <span class="ref" data-term="trap">vallen</span>)</li><li><span class="ref" data-term="flying">Flying</span> negeert het</li><li><span class="ref" data-term="jump">Jump</span> negeert het behalve voor de bestemming</li></ul></div></li>
+    <li class="item"><span class="term" data-term="heal">Heal</span><div class="detail"><h3>Heal X</h3><span class="tag tag-page">p26</span><p>Herstel X HP van een figuur.</p><ul><li><strong>Heal Self:</strong> Alleen jezelf</li><li><strong>Heal Range Y:</strong> Jezelf OF één ally binnen bereik + <span class="ref" data-term="line-of-sight">LOS</span></li></ul><p><strong>Met condities:</strong></p><ul><li>Alleen <span class="ref" data-term="wound">Wound</span>: Verwijder Wound + herstel HP</li><li>Alleen <span class="ref" data-term="poison">Poison</span>: Verwijder Poison, GEEN HP hersteld</li><li>Beide: Verwijder beide, GEEN HP hersteld</li></ul><div class="note">De Heal van <span class="ref" data-term="long-rest">Long Rest</span> volgt dezelfde regels!</div></div></li>
 </ul></section>
 
 <section id="I" class="section"><div class="letter">I</div><ul class="list">
-    <li class="item"><span class="term" data-term="immobilize">Immobilize</span><div class="detail"><h3>Immobilize</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p22</span><p>Cannot perform <span class="ref" data-term="move">Move</span> abilities.</p><p>Can still be pushed/pulled. Teleport isn't Move so works. Removed at end of turn.</p></div></li>
-    <li class="item"><span class="term" data-term="initiative">Initiative</span><div class="detail"><h3>Initiative</h3><span class="tag tag-page">p18</span><p>Determines turn order. Lower number goes first.</p><ul><li>Characters: Number on leading card</li><li>Monsters: Number on Monster Ability Card</li><li><span class="ref" data-term="long-rest">Long Rest</span>: Initiative 99</li></ul><p><strong>Same monster type:</strong> Elites before normals, then by standee number.</p><p><strong>Ties:</strong> Character before monster. Characters compare non-leading cards. Players choose for monsters.</p><p><span class="ref" data-term="summon">Summons</span> act immediately before summoner.</p></div></li>
-    <li class="item"><span class="term" data-term="invisible">Invisible</span><div class="detail"><h3>Invisible</h3><span class="tag tag-pos">Positive</span><span class="tag tag-page">p23</span><p>Cannot be focused or targeted by enemies. Monsters treat you as obstacle.</p><p><strong>Still works against Invisible:</strong></p><ul><li><span class="ref" data-term="retaliate">Retaliate</span> (not targeted)</li><li><span class="ref" data-term="trap">Traps</span> and <span class="ref" data-term="hazardous-terrain">hazards</span></li></ul><p>Removed at end of turn.</p></div></li>
-    <li class="item"><span class="term" data-term="items">Items</span><div class="detail"><h3>Items</h3><span class="tag tag-page">p8, p28</span><p><strong>Slots:</strong> Head, Body, Legs, Two Hands (or 2× One Hand), Small Items (half level, rounded up)</p><p><strong>Can't use if:</strong> <span class="ref" data-term="stun">Stunned</span>, item spent/consumed, during start/end of turn effects.</p><p><strong>Spend (⟲):</strong> Rotate card. Refresh with <span class="ref" data-term="long-rest">Long Rest</span>.</p><p><strong>Consume (✕):</strong> Flip facedown. Only special abilities recover consumed items.</p></div></li>
+    <li class="item"><span class="term" data-term="immobilize">Immobilize</span><div class="detail"><h3>Immobilize</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p22</span><p>Kan geen <span class="ref" data-term="move">Move</span>-abilities uitvoeren.</p><p>Kan nog steeds gepushed/gepulled worden. Teleport is geen Move en werkt dus nog. Wordt verwijderd aan het einde van de beurt.</p></div></li>
+    <li class="item"><span class="term" data-term="initiative">Initiative</span><div class="detail"><h3>Initiative</h3><span class="tag tag-page">p18</span><p>Bepaalt de beurtvolgorde. Lager getal gaat eerst.</p><ul><li>Personages: Getal op de leidende kaart</li><li>Monsters: Getal op de Monster Ability Card</li><li><span class="ref" data-term="long-rest">Long Rest</span>: Initiative 99</li></ul><p><strong>Zelfde monstertype:</strong> Elites vóór normals, daarna op standeenummer.</p><p><strong>Gelijkspel:</strong> Personage vóór monster. Personages vergelijken niet-leidende kaarten. Spelers kiezen voor monsters.</p><p><span class="ref" data-term="summon">Summons</span> handelen direct vóór de oproeper.</p></div></li>
+    <li class="item"><span class="term" data-term="invisible">Invisible</span><div class="detail"><h3>Invisible</h3><span class="tag tag-pos">Positive</span><span class="tag tag-page">p23</span><p>Kan niet als doelwit worden gekozen of gefocust door vijanden. Monsters behandelen je als obstakel.</p><p><strong>Werkt nog steeds tegen Invisible:</strong></p><ul><li><span class="ref" data-term="retaliate">Retaliate</span> (niet gericht)</li><li><span class="ref" data-term="trap">Vallen</span> en <span class="ref" data-term="hazardous-terrain">gevaarlijk terrein</span></li></ul><p>Wordt verwijderd aan het einde van de beurt.</p></div></li>
+    <li class="item"><span class="term" data-term="items">Items</span><div class="detail"><h3>Items</h3><span class="tag tag-page">p8, p28</span><p><strong>Slots:</strong> Head, Body, Legs, Two Hands (of 2× One Hand), Small Items (halve level, naar boven afgerond)</p><p><strong>Kan niet gebruikt worden als:</strong> <span class="ref" data-term="stun">Stunned</span>, item spent/consumed, tijdens start/einde van beurt-effecten.</p><p><strong>Spend (⟲):</strong> Draai de kaart om. Herstel met <span class="ref" data-term="long-rest">Long Rest</span>.</p><p><strong>Consume (✕):</strong> Leg met de voorkant naar beneden. Alleen speciale abilities herstellen geconsumeerde items.</p></div></li>
 </ul></section>
 
 <section id="J" class="section"><div class="letter">J</div><ul class="list">
-    <li class="item"><span class="term" data-term="jump">Jump</span><div class="detail"><h3>Jump</h3><span class="tag tag-page">p19</span><p>Ignores figures, <span class="ref" data-term="trap">traps</span>, <span class="ref" data-term="hazardous-terrain">hazards</span>, terrain during movement.</p><ul><li>Final hex treated as normal movement (<span class="ref" data-term="difficult-terrain">Difficult</span> costs 2, traps trigger)</li><li>Must end in unoccupied hex</li><li>Can't end on obstacle</li></ul></div></li>
+    <li class="item"><span class="term" data-term="jump">Jump</span><div class="detail"><h3>Jump</h3><span class="tag tag-page">p19</span><p>Negeert figuren, <span class="ref" data-term="trap">vallen</span>, <span class="ref" data-term="hazardous-terrain">gevaarlijk terrein</span> en terrein tijdens beweging.</p><ul><li>De eindhex wordt als normale beweging behandeld (<span class="ref" data-term="difficult-terrain">Difficult</span> kost 2, vallen worden geactiveerd)</li><li>Moet eindigen op een onbezette hex</li><li>Mag niet eindigen op een obstakel</li></ul></div></li>
 </ul></section>
 
 <section id="L" class="section"><div class="letter">L</div><ul class="list">
     <li class="item"><span class="term" data-term="level">Level (Character)</span><div class="detail"><h3>Character Level</h3><span class="tag tag-page">p42-44</span>
 
-<p>Your character's level determines their power and available abilities.</p>
-<p><strong>Level affects:</strong></p>
+<p>Het level van je personage bepaalt hun kracht en beschikbare abilities.</p>
+<p><strong>Level beïnvloedt:</strong></p>
 <ul>
-    <li>Maximum HP (see character mat for your class)</li>
-    <li>Which ability cards you can choose from</li>
-    <li>Number of <span class="ref" data-term="perk">Perks</span> you've earned</li>
-    <li>Number of Small Item slots (level ÷ 2, rounded up)</li>
-    <li><span class="ref" data-term="scenario-level">Scenario level</span> calculation for the party</li>
+    <li>Maximum HP (zie karaktermat voor jouw klasse)</li>
+    <li>Welke ability-kaarten je kunt kiezen</li>
+    <li>Het aantal verdiende <span class="ref" data-term="perk">Perks</span></li>
+    <li>Het aantal Small Item-slots (level ÷ 2, naar boven afgerond)</li>
+    <li>De berekening van het <span class="ref" data-term="scenario-level">scenarioniveau</span> voor de groep</li>
 </ul>
-<p><strong>Leveling Up:</strong></p>
-<p>When your <span class="ref" data-term="experience">XP</span> reaches the threshold, level up between scenarios:</p>
+<p><strong>Level omhoog:</strong></p>
+<p>Wanneer je <span class="ref" data-term="experience">XP</span> de drempel bereikt, ga je tussen scenario's omhoog:</p>
 <ol>
-    <li>Increase max HP to new level value</li>
-    <li>Choose 1 new ability card from your level or below</li>
-    <li>Gain 1 Perk</li>
+    <li>Verhoog max. HP naar de nieuwe levelwaarde</li>
+    <li>Kies 1 nieuwe ability-kaart van jouw level of lager</li>
+    <li>Verdien 1 Perk</li>
 </ol>
-<p>Maximum character level is 9.</p></div></li>
-        <li class="item"><span class="term" data-term="line-of-sight">Line of Sight (LOS)</span><div class="detail"><h3>Line of Sight</h3><span class="tag tag-page">p19</span><p>Required for attacks and ranged abilities.</p><ol><li>Pick any corner of your hex</li><li>Pick any corner of target hex</li><li>If a line between them doesn't touch walls/closed doors, you have LOS</li></ol><p>Figures and obstacles don't block LOS. Partial hexes count as walls.</p></div></li>
-        <li class="item"><span class="term" data-term="long-rest">Long Rest</span><div class="detail"><h3>Long Rest</h3><span class="tag tag-page">p17</span><p>Alternative to Two Actions. <span class="ref" data-term="initiative">Initiative</span> 99.</p><p><strong>Requirement:</strong> ≥2 cards in discard pile.</p><p><strong>On your turn:</strong></p><ol><li>Lose 1 card from discard (your choice)</li><li>Return rest of discard to hand</li><li><em>Optional:</em> <span class="ref" data-term="heal">Heal</span> 2 Self</li><li><em>Optional:</em> Refresh spent <span class="ref" data-term="items">items</span></li></ol><div class="note">Can still use items during Long Rest turn! <span class="ref" data-term="summon">Summons</span> still act before you.</div></div></li>
-        <li class="item"><span class="term" data-term="loot">Loot</span><div class="detail"><h3>Loot X</h3><span class="tag tag-page">p27</span><p>Pick up money tokens and treasure tiles within X hexes + <span class="ref" data-term="line-of-sight">LOS</span>.</p>
-<p><strong>Automatic Looting:</strong></p>
-<p>At the END of your turn, you MUST pick up all money tokens and treasure tiles in your hex. This is essentially a free "Loot 0" every turn.</p>
-<p><strong>What Can Be Looted:</strong></p>
+<p>Maximum karakterlevel is 9.</p></div></li>
+        <li class="item"><span class="term" data-term="line-of-sight">Line of Sight (LOS)</span><div class="detail"><h3>Line of Sight</h3><span class="tag tag-page">p19</span><p>Vereist voor aanvallen en ranged abilities.</p><ol><li>Kies een willekeurige hoek van jouw hex</li><li>Kies een willekeurige hoek van de doelwit-hex</li><li>Als een lijn daartussen muren/gesloten deuren niet raakt, heb je LOS</li></ol><p>Figuren en obstakels blokkeren LOS niet. Gedeeltelijke hexes tellen als muren.</p></div></li>
+        <li class="item"><span class="term" data-term="long-rest">Long Rest</span><div class="detail"><h3>Long Rest</h3><span class="tag tag-page">p17</span><p>Alternatief voor Two Actions. <span class="ref" data-term="initiative">Initiative</span> 99.</p><p><strong>Vereiste:</strong> ≥2 kaarten in de aflegstapel.</p><p><strong>Op je beurt:</strong></p><ol><li>Verlies 1 kaart van de aflegstapel (jouw keuze)</li><li>Pak de rest van de aflegstapel terug in je hand</li><li><em>Optioneel:</em> <span class="ref" data-term="heal">Heal</span> 2 Self</li><li><em>Optioneel:</em> Herstel bestede <span class="ref" data-term="items">items</span></li></ol><div class="note">Je kunt nog steeds items gebruiken tijdens een Long Rest-beurt! <span class="ref" data-term="summon">Summons</span> handelen nog steeds vóór jou.</div></div></li>
+        <li class="item"><span class="term" data-term="loot">Loot</span><div class="detail"><h3>Loot X</h3><span class="tag tag-page">p27</span><p>Pak geldtokens en schattegels op binnen X hexes + <span class="ref" data-term="line-of-sight">LOS</span>.</p>
+<p><strong>Automatisch plunderen:</strong></p>
+<p>Aan het EINDE van je beurt MOET je alle geldtokens en schattegels op jouw hex oppakken. Dit is in feite een gratis "Loot 0" elke beurt.</p>
+<p><strong>Wat geplunderd kan worden:</strong></p>
 <ul>
-    <li><strong>Money tokens:</strong> Gain <span class="ref" data-term="gold">gold</span> equal to token value × gold multiplier</li>
-    <li><strong>Treasure tiles:</strong> Gain the reward listed in the scenario book (gold, items, or special rewards)</li>
+    <li><strong>Geldtokens:</strong> Verdien <span class="ref" data-term="gold">gold</span> gelijk aan tokenwaarde × goudmultiplier</li>
+    <li><strong>Schattegels:</strong> Ontvang de beloning vermeld in het scenarioboek (gold, items of speciale beloningen)</li>
 </ul>
-<p><strong>Important Rules:</strong></p>
+<p><strong>Belangrijke regels:</strong></p>
 <ul>
-    <li>Money drops where a monster dies</li>
-    <li>Only the character who loots a treasure gets its reward</li>
-    <li><span class="ref" data-term="summon">Summons</span> cannot loot anything</li>
-    <li>Items gained from treasure can't be used until next scenario</li>
+    <li>Geld valt waar een monster sterft</li>
+    <li>Alleen het personage dat een schat plundert krijgt de beloning</li>
+    <li><span class="ref" data-term="summon">Summons</span> kunnen niets plunderen</li>
+    <li>Items verkregen uit schatten kunnen niet worden gebruikt tot het volgende scenario</li>
 </ul>
-<div class="note warn">Money/treasure left on ground when scenario ends is LOST FOREVER! Make sure to loot before completing the objective.</div></div></li>
+<div class="note warn">Geld/schatten die op de grond liggen wanneer het scenario eindigt zijn VOORGOED VERLOREN! Zorg dat je plundert vóórdat je het doel voltooit.</div></div></li>
         <li class="item"><span class="term" data-term="lost-cards">Lost Cards</span><div class="detail"><h3>Lost Cards</h3><span class="tag tag-page">p28</span>
-<p>Cards in your Lost pile cannot be recovered through normal means. They're gone for the rest of the scenario.</p>
-<p><strong>Cards go to Lost when:</strong></p>
+<p>Kaarten in je verloren stapel kunnen niet worden hersteld via normale middelen. Ze zijn weg voor de rest van het scenario.</p>
+<p><strong>Kaarten gaan naar Verloren wanneer:</strong></p>
 <ul>
-    <li>You play an ability with the Lost symbol (🗙)</li>
-    <li>You choose to lose cards to negate <span class="ref" data-term="damage">damage</span></li>
-    <li>You lose a card during <span class="ref" data-term="long-rest">Long Rest</span> or <span class="ref" data-term="short-rest">Short Rest</span></li>
-    <li>A persistent <span class="ref" data-term="active-bonus">Active Bonus</span> uses all its slots</li>
+    <li>Je een ability speelt met het Lost-symbool (🗙)</li>
+    <li>Je ervoor kiest kaarten te verliezen om <span class="ref" data-term="damage">schade</span> te negeren</li>
+    <li>Je een kaart verliest tijdens een <span class="ref" data-term="long-rest">Long Rest</span> of <span class="ref" data-term="short-rest">Short Rest</span></li>
+    <li>Een persistent <span class="ref" data-term="active-bonus">Active Bonus</span> alle vakjes heeft gebruikt</li>
 </ul>
-<p><strong>Special Recovery:</strong></p>
-<p>Some rare abilities can recover lost cards, but these are uncommon. Plan your lost abilities carefully!</p>
-<div class="note warn">Running out of cards causes <span class="ref" data-term="exhaustion">Exhaustion</span>! Each lost card brings you closer to being unable to continue.</div></div></li>
+<p><strong>Speciaal herstel:</strong></p>
+<p>Sommige zeldzame abilities kunnen verloren kaarten herstellen, maar deze zijn ongewoon. Plan je verloren abilities zorgvuldig!</p>
+<div class="note warn">Zonder kaarten raken veroorzaakt <span class="ref" data-term="exhaustion">Exhaustion</span>! Elke verloren kaart brengt je dichter bij het punt waarop je niet meer door kunt gaan.</div></div></li>
     </ul></section>
 
 <section id="M" class="section"><div class="letter">M</div><ul class="list">
     <li class="item"><span class="term" data-term="monster-ability-cards">Monster Ability Cards</span><div class="detail"><h3>Monster Ability Cards</h3><span class="tag tag-page">p29</span>
 
-<p>Each monster type has its own deck of ability cards that determine what monsters of that type do each round.</p>
-<p><strong>Drawing Ability Cards:</strong></p>
+<p>Elk monstertype heeft zijn eigen deck met ability-kaarten die bepalen wat monsters van dat type elke ronde doen.</p>
+<p><strong>Ability-kaarten trekken:</strong></p>
 <ul>
-    <li>At the start of each round, draw one card for each monster type currently on the board</li>
-    <li>ALL monsters of that type use the same card (same <span class="ref" data-term="initiative">initiative</span>, same actions)</li>
-    <li>If a new monster type is revealed mid-round (e.g., opening a <span class="ref" data-term="door">door</span>), draw a card for them immediately</li>
+    <li>Trek aan het begin van elke ronde één kaart voor elk monstertype dat momenteel op het bord staat</li>
+    <li>ALLE monsters van dat type gebruiken dezelfde kaart (zelfde <span class="ref" data-term="initiative">initiative</span>, zelfde acties)</li>
+    <li>Als halverwege de ronde een nieuw monstertype verschijnt (bijv. het openen van een <span class="ref" data-term="door">deur</span>), trek dan direct een kaart voor hen</li>
 </ul>
-<p><strong>Reading the Card:</strong></p>
+<p><strong>De kaart lezen:</strong></p>
 <ul>
-    <li><strong>Initiative:</strong> Number at top determines turn order</li>
-    <li><strong>Actions:</strong> List of abilities performed top to bottom</li>
-    <li><strong>Shuffle symbol:</strong> If present, shuffle the deck at <span class="ref" data-term="end-of-round">end of round</span></li>
+    <li><strong>Initiative:</strong> Getal bovenaan bepaalt de beurtvolgorde</li>
+    <li><strong>Acties:</strong> Lijst van abilities die van boven naar beneden worden uitgevoerd</li>
+    <li><strong>Schud-symbool:</strong> Indien aanwezig, schud het deck aan het <span class="ref" data-term="end-of-round">einde van de ronde</span></li>
 </ul>
-<p><strong>Special Values:</strong></p>
+<p><strong>Speciale waarden:</strong></p>
 <ul>
-    <li><strong>+X / -X:</strong> Add to the monster's base stat</li>
-    <li><strong>No number:</strong> Use base stat from stat card</li>
-    <li><strong>–:</strong> The monster doesn't perform this action</li>
+    <li><strong>+X / -X:</strong> Voeg toe aan de basisstat van het monster</li>
+    <li><strong>Geen getal:</strong> Gebruik de basisstat van de statkaart</li>
+    <li><strong>–:</strong> Het monster voert deze actie niet uit</li>
 </ul></div></li>
         <li class="item"><span class="term" data-term="monster-type">Monster Type (Normal vs Elite)</span><div class="detail"><h3>Normal vs Elite Monsters</h3><span class="tag tag-page">p29</span>
-<p>Most monster types come in two versions: Normal and Elite.</p>
-<p><strong>Differences:</strong></p>
+<p>De meeste monstertypes komen in twee versies: Normal en Elite.</p>
+<p><strong>Verschillen:</strong></p>
 <ul>
-    <li><strong>Elite monsters</strong> have higher HP, attack, and often extra abilities</li>
-    <li>Elite standees have a gold border</li>
-    <li>Use the corresponding row on the monster stat card (Normal or Elite)</li>
+    <li><strong>Elite-monsters</strong> hebben hogere HP, aanval en vaak extra abilities</li>
+    <li>Elite-standees hebben een gouden rand</li>
+    <li>Gebruik de bijbehorende rij op de monsterstatkaart (Normal of Elite)</li>
 </ul>
-<p><strong>Turn Order:</strong></p>
-<p>Within the same monster type, Elite monsters act before Normal monsters. Then by standee number (lower numbers first).</p>
-<p><strong>Setup:</strong></p>
-<p>Scenario books show which version to use based on player count. White = 2 players, Yellow = 3 players, Red = 4 players.</p></div></li>
+<p><strong>Beurtvolgorde:</strong></p>
+<p>Binnen hetzelfde monstertype handelen Elite-monsters vóór Normal-monsters. Daarna op standeenummer (lagere nummers eerst).</p>
+<p><strong>Opstelling:</strong></p>
+<p>Scenarioboeken tonen welke versie gebruikt wordt op basis van het spelersaantal. Wit = 2 spelers, Geel = 3 spelers, Rood = 4 spelers.</p></div></li>
         <li class="item"><span class="term" data-term="monster-focus">Monster Focus</span><div class="detail"><h3>Monster Focus</h3><span class="tag tag-page">p29-31</span>
-<p>Monster Focus is one of the most complex rules in Gloomhaven. Understanding it well helps you predict monster behavior and position yourself strategically.</p>
+<p>Monster Focus is een van de meest complexe regels in Gloomhaven. Een goed begrip hiervan helpt je het gedrag van monsters te voorspellen en je strategisch te positioneren.</p>
 
-<p><strong>The Core Question:</strong> Which enemy can this monster attack using the <em>least amount of movement</em>?</p>
+<p><strong>De kernvraag:</strong> Welke vijand kan dit monster aanvallen met de <em>minste beweging</em>?</p>
 
-<p><strong>Step 1: Identify Valid Targets</strong></p>
-<p>The monster looks at ALL enemies (usually characters) and asks: "If I had unlimited movement, which enemies could I eventually reach and attack?" This creates a list of potential focus targets.</p>
+<p><strong>Stap 1: Geldige doelwitten identificeren</strong></p>
+<p>Het monster bekijkt ALLE vijanden (meestal personages) en vraagt zich af: "Als ik onbeperkte beweging had, welke vijanden zou ik uiteindelijk kunnen bereiken en aanvallen?" Dit levert een lijst van potentiële focusdoelwitten op.</p>
 <ul>
-    <li><span class="ref" data-term="invisible">Invisible</span> enemies are completely ignored—monsters can't focus on them at all</li>
-    <li>There must be an unblocked path to a hex where the monster could attack from</li>
-    <li>If there's literally no path (completely walled off), that enemy isn't a valid target</li>
+    <li><span class="ref" data-term="invisible">Invisible</span> vijanden worden volledig genegeerd — monsters kunnen hen helemaal niet focussen</li>
+    <li>Er moet een ongeblokkeerd pad zijn naar een hex vanwaar het monster kan aanvallen</li>
+    <li>Als er letterlijk geen pad is (volledig ommuurd), is die vijand geen geldig doelwit</li>
 </ul>
 
-<p><strong>Step 2: Calculate Movement Needed</strong></p>
-<p>For each valid target, the monster calculates: "How many hexes do I need to move to reach a position where I can attack this enemy?"</p>
+<p><strong>Stap 2: Benodigde beweging berekenen</strong></p>
+<p>Voor elk geldig doelwit berekent het monster: "Hoeveel hexes moet ik bewegen om een positie te bereiken van waaruit ik deze vijand kan aanvallen?"</p>
 <ul>
-    <li><strong>Melee monsters:</strong> Need to reach a hex <span class="ref" data-term="adjacent">adjacent</span> to the target</li>
-    <li><strong>Ranged monsters:</strong> Need to reach a hex within their attack range AND with <span class="ref" data-term="line-of-sight">line of sight</span></li>
-    <li>If the monster's ability card has no attack, treat it as a melee attack (Range 1) for focus purposes</li>
+    <li><strong>Melee-monsters:</strong> Moeten een hex bereiken die <span class="ref" data-term="adjacent">adjacent</span> is aan het doelwit</li>
+    <li><strong>Ranged-monsters:</strong> Moeten een hex bereiken binnen hun aanvalsbereik EN met <span class="ref" data-term="line-of-sight">line of sight</span></li>
+    <li>Als de ability-kaart van het monster geen aanval heeft, behandel het dan als een melee-aanval (Range 1) voor focusdoeleinden</li>
 </ul>
 
-<p><strong>Step 3: Choose the Focus</strong></p>
-<p>The monster focuses on the enemy requiring the LEAST movement. This is NOT necessarily the closest enemy by distance—it's about how many hexes the monster needs to actually move.</p>
+<p><strong>Stap 3: De focus kiezen</strong></p>
+<p>Het monster focust op de vijand die de MINSTE beweging vereist. Dit is NIET noodzakelijk de dichtstbijzijnde vijand op afstand — het gaat om hoeveel hexes het monster daadwerkelijk moet bewegen.</p>
 
-<p><strong>Example:</strong> A melee monster is 3 hexes from Character A, but there's an obstacle in the way requiring 5 movement to walk around. Character B is 4 hexes away with a clear path. The monster focuses on Character B (4 movement) not Character A (5 movement).</p>
+<p><strong>Voorbeeld:</strong> Een melee-monster staat 3 hexes van Personage A, maar er is een obstakel dat 5 beweging vereist om omheen te lopen. Personage B staat 4 hexes weg met een vrij pad. Het monster focust op Personage B (4 beweging) en niet op Personage A (5 beweging).</p>
 
-<p><strong>Breaking Ties:</strong></p>
-<p>If multiple enemies require equal movement:</p>
+<p><strong>Gelijkspel doorbreken:</strong></p>
+<p>Als meerdere vijanden evenveel beweging vereisen:</p>
 <ol>
-    <li><strong>Proximity:</strong> Focus the one with shortest direct distance (count hexes in straight line, ignoring obstacles)</li>
-    <li><strong>Initiative:</strong> If still tied, focus the one with lowest <span class="ref" data-term="initiative">initiative</span> this round</li>
-    <li><strong>Players Choose:</strong> If STILL tied, players decide which enemy becomes the focus</li>
+    <li><strong>Nabijheid:</strong> Focus degene met de kortste directe afstand (tel hexes in rechte lijn, obstakels negeren)</li>
+    <li><strong>Initiative:</strong> Als het nog steeds gelijk is, focus degene met de laagste <span class="ref" data-term="initiative">initiative</span> deze ronde</li>
+    <li><strong>Spelers kiezen:</strong> Als het NOG STEEDS gelijk is, beslissen spelers welke vijand de focus wordt</li>
 </ol>
 
-<p><strong>Path Rules:</strong></p>
+<p><strong>Padregels:</strong></p>
 <ul>
-    <li>Monsters consider <span class="ref" data-term="trap">traps</span> and <span class="ref" data-term="hazardous-terrain">hazardous terrain</span> as obstacles when calculating paths—they try to avoid them</li>
-    <li>EXCEPTION: If avoiding a trap/hazard makes a target unreachable, the monster WILL path through it</li>
-    <li>Monsters CAN path through other monsters and characters (they just can't end there)</li>
-    <li><span class="ref" data-term="difficult-terrain">Difficult terrain</span> counts as 2 movement when calculating paths</li>
+    <li>Monsters beschouwen <span class="ref" data-term="trap">vallen</span> en <span class="ref" data-term="hazardous-terrain">gevaarlijk terrein</span> als obstakels bij het berekenen van paden — ze proberen ze te vermijden</li>
+    <li>UITZONDERING: Als het vermijden van een val/gevaar een doelwit onbereikbaar maakt, zal het monster er WEL doorheen gaan</li>
+    <li>Monsters KUNNEN door andere monsters en personages heen bewegen (ze kunnen er alleen niet op eindigen)</li>
+    <li><span class="ref" data-term="difficult-terrain">Difficult terrain</span> telt als 2 beweging bij het berekenen van paden</li>
 </ul>
 
-<div class="note warn"><strong>No Focus?</strong> If a monster cannot find ANY valid target (all enemies are Invisible, or completely unreachable), the monster has no focus. It will NOT move and will NOT attack. However, it WILL still perform any other abilities on its card (like Shield, Heal, creating elements, etc.).</div>
+<div class="note warn"><strong>Geen focus?</strong> Als een monster GEEN geldig doelwit kan vinden (alle vijanden zijn Invisible of volledig onbereikbaar), heeft het monster geen focus. Het zal NIET bewegen en NIET aanvallen. Het zal echter WEL alle andere abilities op zijn kaart uitvoeren (zoals Shield, Heal, elementen aanmaken, enz.).</div>
 
-<p><strong>Common Mistakes:</strong></p>
+<p><strong>Veelgemaakte fouten:</strong></p>
 <ul>
-    <li>❌ "The monster attacks whoever is closest" — Wrong! It's about movement to attack position, not raw distance</li>
-    <li>❌ "Ranged monsters focus whoever is in range" — Wrong! They still calculate movement, even if multiple targets are already in range</li>
-    <li>❌ "Monsters always avoid traps" — Wrong! They will path through traps if it's the only way to reach ANY target</li>
+    <li>❌ "Het monster valt degene aan die het dichtst bij staat" — Fout! Het gaat om beweging naar aanvalspositie, niet om de onbewerkte afstand</li>
+    <li>❌ "Ranged-monsters focussen degene die al binnen bereik staat" — Fout! Ze berekenen nog steeds beweging, ook als meerdere doelwitten al binnen bereik zijn</li>
+    <li>❌ "Monsters vermijden altijd vallen" — Fout! Ze bewegen door vallen als dat de enige manier is om een doelwit te bereiken</li>
 </ul>
 
-<p>See also: <span class="ref" data-term="monster-movement">Monster Movement</span> for what happens after focus is determined.</p>
+<p>Zie ook: <span class="ref" data-term="monster-movement">Monster Movement</span> voor wat er gebeurt nadat de focus is bepaald.</p>
 </div></li>
         <li class="item"><span class="term" data-term="monster-movement">Monster Movement</span><div class="detail"><h3>Monster Movement</h3><span class="tag tag-page">p30-31</span>
-<p>After determining <span class="ref" data-term="monster-focus">focus</span>, the monster moves toward the optimal attack position. Monsters are "smart" about their movement—they always try to optimize.</p>
+<p>Na het bepalen van de <span class="ref" data-term="monster-focus">focus</span> beweegt het monster naar de optimale aanvalspositie. Monsters zijn "slim" in hun beweging — ze proberen altijd te optimaliseren.</p>
 
-<p><strong>Where Does the Monster Want to Go?</strong></p>
-<p>The monster calculates the BEST hex to stand on, considering these priorities in order:</p>
+<p><strong>Waar wil het monster naartoe?</strong></p>
+<p>Het monster berekent de BESTE hex om op te staan, met inachtneming van de volgende prioriteiten:</p>
 <ol>
-    <li><strong>Must be able to attack focus:</strong> The destination must be within attack range with <span class="ref" data-term="line-of-sight">line of sight</span></li>
-    <li><strong>Avoid Disadvantage:</strong> Ranged monsters won't end <span class="ref" data-term="adjacent">adjacent</span> to their focus (would cause <span class="ref" data-term="disadvantage">Disadvantage</span>) if they can help it</li>
-    <li><strong>Maximize targets:</strong> If the attack can hit multiple targets, prefer positions that hit more enemies</li>
-    <li><strong>Minimize movement:</strong> Among equally good positions, use the fewest hexes</li>
+    <li><strong>Moet focus kunnen aanvallen:</strong> De bestemming moet binnen aanvalsbereik zijn met <span class="ref" data-term="line-of-sight">line of sight</span></li>
+    <li><strong>Disadvantage vermijden:</strong> Ranged-monsters eindigen niet <span class="ref" data-term="adjacent">adjacent</span> aan hun focus (zou <span class="ref" data-term="disadvantage">Disadvantage</span> veroorzaken) als ze dat kunnen vermijden</li>
+    <li><strong>Doelwitten maximaliseren:</strong> Als de aanval meerdere doelwitten kan treffen, geef dan de voorkeur aan posities die meer vijanden raken</li>
+    <li><strong>Beweging minimaliseren:</strong> Gebruik bij even goede posities zo min mogelijk hexes</li>
 </ol>
 
-<p><strong>What If the Monster Can't Reach?</strong></p>
+<p><strong>Wat als het monster niet kan bereiken?</strong></p>
 <ul>
-    <li>If the monster doesn't have enough movement to reach its ideal destination, it moves as close as possible along the shortest path</li>
-    <li>If the monster is already in a valid attack position and moving wouldn't improve it, the monster doesn't move at all (saves movement for nothing)</li>
-    <li>If an ally is standing on the monster's preferred hex, the monster stops in the last hex before that ally</li>
+    <li>Als het monster niet genoeg beweging heeft om zijn ideale bestemming te bereiken, beweegt het zo dicht mogelijk langs het kortste pad</li>
+    <li>Als het monster al in een geldige aanvalspositie staat en bewegen dit niet verbetert, beweegt het monster helemaal niet</li>
+    <li>Als een bondgenoot op de voorkeurshex van het monster staat, stopt het monster in de laatste hex vóór die bondgenoot</li>
 </ul>
 
-<p><strong>Ranged Monster Movement:</strong></p>
-<p>Ranged monsters have an extra consideration: they HATE being adjacent to their focus because it gives them Disadvantage. If a ranged monster starts adjacent to its focus and has movement available, it will move exactly 1 hex away before attacking (if possible).</p>
+<p><strong>Beweging van ranged-monsters:</strong></p>
+<p>Ranged-monsters hebben een extra overweging: ze HATEN het om adjacent aan hun focus te staan omdat dat Disadvantage geeft. Als een ranged-monster adjacent aan zijn focus begint en beweging beschikbaar heeft, zal het precies 1 hex weggaan vóór het aanvalt (indien mogelijk).</p>
 
-<p><strong>Path Rules:</strong></p>
+<p><strong>Padregels:</strong></p>
 <ul>
-    <li>Monsters will NOT move through <span class="ref" data-term="trap">traps</span> or <span class="ref" data-term="hazardous-terrain">hazardous terrain</span> unless it's the ONLY way to reach their focus</li>
-    <li>If forced through a trap/hazard, they take the damage/effect</li>
-    <li>Monsters CAN move through other figures (ally or enemy) but cannot end on them</li>
-    <li><span class="ref" data-term="difficult-terrain">Difficult terrain</span> costs 2 movement to enter</li>
+    <li>Monsters bewegen NIET door <span class="ref" data-term="trap">vallen</span> of <span class="ref" data-term="hazardous-terrain">gevaarlijk terrein</span> tenzij dit de ENIGE manier is om hun focus te bereiken</li>
+    <li>Als ze gedwongen worden door een val/gevaar, nemen ze de schade/het effect</li>
+    <li>Monsters KUNNEN door andere figuren (bondgenoot of vijand) heen bewegen, maar kunnen er niet op eindigen</li>
+    <li><span class="ref" data-term="difficult-terrain">Difficult terrain</span> kost 2 beweging om te betreden</li>
 </ul>
 
-<p><strong>Example:</strong> A ranged Archer (Range 3) is adjacent to a character. Its ability card says "Move 2, Attack 2". The Archer will use 1 movement to step away from the character (avoiding Disadvantage), then attack from 2 hexes away. It won't use its second movement point because it's already in a good position.</p>
+<p><strong>Voorbeeld:</strong> Een ranged Archer (Range 3) staat adjacent aan een personage. De ability-kaart zegt "Move 2, Attack 2". De Archer gebruikt 1 beweging om een stap weg te doen van het personage (Disadvantage vermijden), dan aanvallen vanuit 2 hexes afstand. Het gebruikt het tweede bewegingspunt niet omdat het al in een goede positie staat.</p>
 
-<div class="note">Monsters use the <em>minimum</em> movement necessary. They never "wander" or waste movement—every hex must bring them closer to an optimal attack position.</div>
+<div class="note">Monsters gebruiken de <em>minimale</em> benodigde beweging. Ze "zwerven" nooit of verspillen beweging — elke hex moet hen dichter bij een optimale aanvalspositie brengen.</div>
 </div></li>
-        <li class="item"><span class="term" data-term="move">Move</span><div class="detail"><h3>Move X</h3><span class="tag tag-page">p19</span><p>Move 0 to X hexes.</p><ul><li>Can't move while <span class="ref" data-term="immobilize">Immobilized</span></li><li>Can't move through walls or closed <span class="ref" data-term="door">doors</span></li><li>Can move through allies, not enemies</li><li>Can't end on another figure</li><li><span class="ref" data-term="difficult-terrain">Difficult</span>: costs 2 to enter</li></ul><p><span class="ref" data-term="jump">Jump</span>/<span class="ref" data-term="flying">Flying</span> ignore figures and terrain.</p></div></li>
-        <li class="item"><span class="term" data-term="muddle">Muddle</span><div class="detail"><h3>Muddle</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p23</span><p><span class="ref" data-term="disadvantage">Disadvantage</span> on all attacks.</p><p>Removed at end of turn. Stacks with other Disadvantage sources (but Advantage cancels it).</p></div></li>
+        <li class="item"><span class="term" data-term="move">Move</span><div class="detail"><h3>Move X</h3><span class="tag tag-page">p19</span><p>Beweeg 0 tot X hexes.</p><ul><li>Kan niet bewegen terwijl <span class="ref" data-term="immobilize">Immobilized</span></li><li>Kan niet door muren of gesloten <span class="ref" data-term="door">deuren</span> bewegen</li><li>Kan door allies bewegen, niet door vijanden</li><li>Kan niet eindigen op een ander figuur</li><li><span class="ref" data-term="difficult-terrain">Difficult terrain</span>: kost 2 om te betreden</li></ul><p><span class="ref" data-term="jump">Jump</span>/<span class="ref" data-term="flying">Flying</span> negeren figuren en terrein.</p></div></li>
+        <li class="item"><span class="term" data-term="muddle">Muddle</span><div class="detail"><h3>Muddle</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p23</span><p><span class="ref" data-term="disadvantage">Disadvantage</span> op alle aanvallen.</p><p>Wordt verwijderd aan het einde van de beurt. Stapelt met andere Disadvantage-bronnen (maar Advantage heft het op).</p></div></li>
     </ul></section>
     <section id="N" class="section"><div class="letter">N</div><ul class="list">
-        <li class="item"><span class="term" data-term="negative-hex">Negative Hex (Self)</span><div class="detail"><h3>Negative Hex / Negative Targeting</h3>
-<p>Some abilities can target yourself with negative effects—typically to boost an ally or trigger a beneficial ability.</p>
-<p><strong>Examples:</strong></p>
+        <li class="item"><span class="term" data-term="negative-hex">Negative Hex (Self)</span><div class="detail"><h3>Negative Hex / Negatief richten</h3>
+<p>Sommige abilities kunnen jezelf als doelwit kiezen met negatieve effecten — doorgaans om een ally te versterken of een voordelige ability te activeren.</p>
+<p><strong>Voorbeelden:</strong></p>
 <ul>
-    <li>An ability that says "Attack 2, Target all enemies and allies" will hit your allies too</li>
-    <li>Push/Pull can be used on allies if the ability allows targeting allies</li>
+    <li>Een ability die zegt "Attack 2, Target all enemies and allies" raakt ook je allies</li>
+    <li>Push/Pull kan op allies worden gebruikt als de ability het richten op allies toestaat</li>
 </ul>
-<p>Generally, you cannot target yourself unless an ability specifically says "self" or allows targeting allies (and you're your own ally—wait, you're NOT your own <span class="ref" data-term="ally">ally</span>!).</p></div></li>
+<p>Over het algemeen kun je jezelf niet als doelwit kiezen tenzij een ability specifiek "self" zegt of het richten op allies toestaat (en jij je eigen ally bent — wacht, je bent NIET je eigen <span class="ref" data-term="ally">ally</span>!).</p></div></li>
         <li class="item"><span class="term" data-term="null-card">Null Card</span><div class="detail"><h3>Null Card (×0)</h3>
-<p>The Null card in your <span class="ref" data-term="attack-modifier">Attack Modifier</span> deck causes your attack to deal <strong>0 damage</strong>.</p>
-<p><strong>Important:</strong></p>
+<p>De Null-kaart in je <span class="ref" data-term="attack-modifier">Attack Modifier</span>-deck zorgt ervoor dat je aanval <strong>0 schade</strong> aanricht.</p>
+<p><strong>Belangrijk:</strong></p>
 <ul>
-    <li>Even with 0 damage, other attack effects STILL APPLY (conditions, push, pull, etc.)</li>
-    <li>Drawing Null triggers a shuffle reminder—shuffle at <span class="ref" data-term="end-of-round">end of round</span></li>
-    <li><span class="ref" data-term="curse">Curse</span> cards function like Null but are removed after drawing</li>
+    <li>Zelfs met 0 schade worden andere aanvalseffecten WEL TOEGEPAST (condities, push, pull, enz.)</li>
+    <li>Het trekken van Null activeert een schudherinnering — schud aan het <span class="ref" data-term="end-of-round">einde van de ronde</span></li>
+    <li><span class="ref" data-term="curse">Curse</span>-kaarten werken als Null maar worden verwijderd na het trekken</li>
 </ul>
-<p>The base modifier deck has exactly one Null card. This can't be removed, but <span class="ref" data-term="perk">Perks</span> that remove -2 cards effectively improve your odds.</p></div></li>
+<p>Het basismodifierdeck heeft precies één Null-kaart. Deze kan niet worden verwijderd, maar <span class="ref" data-term="perk">Perks</span> die -2-kaarten verwijderen verbeteren effectief je kansen.</p></div></li>
     </ul></section>
 
 <section id="O" class="section"><div class="letter">O</div><ul class="list">
     <li class="item"><span class="term" data-term="obstacle">Obstacle</span><div class="detail"><h3>Obstacle</h3><span class="tag tag-page">p14</span>
 
-<p>Obstacles are terrain features that block movement. Common examples: rocks, pillars, statues, tables, bookcases.</p>
-<p><strong>Movement Rules:</strong></p>
+<p>Obstakels zijn terreinkenmerken die beweging blokkeren. Veelvoorkomende voorbeelden: rotsen, pilaren, standbeelden, tafels, boekenkasten.</p>
+<p><strong>Bewegingsregels:</strong></p>
 <ul>
-    <li>Figures cannot move through or end movement on obstacles</li>
-    <li><span class="ref" data-term="flying">Flying</span> figures CAN move through and end on obstacles</li>
-    <li><span class="ref" data-term="jump">Jump</span> can move through but NOT end on obstacles</li>
-    <li>Figures cannot be <span class="ref" data-term="push">pushed</span> into or through obstacles</li>
+    <li>Figuren kunnen niet door obstakels heen bewegen of erop eindigen</li>
+    <li><span class="ref" data-term="flying">Flying</span>-figuren KUNNEN door obstakels heen bewegen en erop eindigen</li>
+    <li><span class="ref" data-term="jump">Jump</span> kan er doorheen bewegen maar NIET erop eindigen</li>
+    <li>Figuren kunnen niet in of door obstakels worden <span class="ref" data-term="push">gepushed</span></li>
 </ul>
-<p><strong>Other Rules:</strong></p>
+<p><strong>Overige regels:</strong></p>
 <ul>
-    <li>Obstacles do NOT block <span class="ref" data-term="line-of-sight">line of sight</span></li>
-    <li>A Flying figure on an obstacle is NOT <span class="ref" data-term="adjacent">adjacent</span> to that obstacle</li>
-    <li>If a Flying figure loses Flying while on an obstacle, they take <span class="ref" data-term="trap">trap</span> damage and move to the nearest empty hex</li>
+    <li>Obstakels blokkeren <span class="ref" data-term="line-of-sight">line of sight</span> NIET</li>
+    <li>Een Flying-figuur op een obstakel is NIET <span class="ref" data-term="adjacent">adjacent</span> aan dat obstakel</li>
+    <li>Als een Flying-figuur Flying verliest terwijl het op een obstakel staat, neemt het <span class="ref" data-term="trap">val</span>-schade en beweegt naar de dichtstbijzijnde lege hex</li>
 </ul></div></li>
         <li class="item"><span class="term" data-term="overlay-tiles">Overlay Tiles</span><div class="detail"><h3>Overlay Tiles</h3><span class="tag tag-page">p14</span>
-<p>Overlay tiles modify hexes with special terrain or objects.</p>
-<p><strong>Types:</strong></p>
+<p>Overlay-tegels passen hexes aan met speciaal terrein of objecten.</p>
+<p><strong>Soorten:</strong></p>
 <ul>
-    <li><strong><span class="ref" data-term="obstacle">Obstacles</span>:</strong> Block movement</li>
-    <li><strong><span class="ref" data-term="trap">Traps</span>:</strong> Trigger effects when entered</li>
-    <li><strong><span class="ref" data-term="hazardous-terrain">Hazardous Terrain</span>:</strong> Damage when entered</li>
-    <li><strong><span class="ref" data-term="difficult-terrain">Difficult Terrain</span>:</strong> Costs extra movement</li>
-    <li><strong>Treasure:</strong> Can be looted</li>
-    <li><strong><span class="ref" data-term="door">Doors</span>:</strong> Connect rooms</li>
+    <li><strong><span class="ref" data-term="obstacle">Obstakels</span>:</strong> Blokkeren beweging</li>
+    <li><strong><span class="ref" data-term="trap">Vallen</span>:</strong> Activeren effecten wanneer betreden</li>
+    <li><strong><span class="ref" data-term="hazardous-terrain">Hazardous Terrain</span>:</strong> Schade wanneer betreden</li>
+    <li><strong><span class="ref" data-term="difficult-terrain">Difficult Terrain</span>:</strong> Kost extra beweging</li>
+    <li><strong>Schat:</strong> Kan geplunderd worden</li>
+    <li><strong><span class="ref" data-term="door">Deuren</span>:</strong> Verbinden kamers</li>
 </ul>
-<p>Overlay tiles are placed during scenario setup and may be added/removed during play.</p></div></li>
+<p>Overlay-tegels worden geplaatst tijdens de scenarioopstelling en kunnen tijdens het spel worden toegevoegd/verwijderd.</p></div></li>
     </ul></section>
 
 <section id="P" class="section"><div class="letter">P</div><ul class="list">
-        <li class="item"><span class="term" data-term="perk">Perk</span><div class="detail"><h3>Perk</h3><span class="tag tag-page">p44</span><p>Permanent improvement to <span class="ref" data-term="attack-modifier">modifier deck</span>.</p><p><strong>Gain perks from:</strong></p><ul><li>3 checkmarks (<span class="ref" data-term="battle-goal">Battle Goals</span>)</li><li>Each level up</li><li>Each previously retired character (+1 for new characters)</li></ul><p>Each perk removes bad cards or adds powerful new ones.</p></div></li>
-        <li class="item"><span class="term" data-term="pierce">Pierce</span><div class="detail"><h3>Pierce Y</h3><span class="tag tag-page">p22</span><p>Ignores Y points of <span class="ref" data-term="shield">Shield</span>.</p><p>Example: Attack 4, Pierce 2 vs Shield 3 → Shield reduced to 1 → Deal 3 damage.</p><p>Pierce has no effect if target has no Shield.</p></div></li>
-        <li class="item"><span class="term" data-term="poison">Poison</span><div class="detail"><h3>Poison</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p22</span><p>All attacks against this figure gain <strong>+1 damage</strong> (applied before <span class="ref" data-term="shield">Shield</span>).</p><p>NOT removed at end of turn. Only removed by <span class="ref" data-term="heal">Heal</span> (but Heal restores NO HP if Poisoned).</p></div></li>
-        <li class="item"><span class="term" data-term="personal-quest">Personal Quest</span><div class="detail"><h3>Personal Quest</h3><span class="tag tag-page">p48</span><p>A secret long-term goal unique to each character.</p><ul><li>Draw 2 at character creation, keep 1 secretly</li><li>Completing it causes your character to <span class="ref" data-term="retirement">retire</span></li><li>Retiring unlocks a new class and grants <span class="ref" data-term="prosperity">prosperity</span> checkmarks and perks</li></ul></div></li>
-        <li class="item"><span class="term" data-term="prosperity">Prosperity</span><div class="detail"><h3>Prosperity</h3><span class="tag tag-page">p48</span><p>The town's overall wealth and development level, ranging from 1 to 9.</p><p><strong>Gaining Prosperity checkmarks from:</strong></p><ul><li>Character retirements</li><li>Certain scenario rewards</li><li>Donations to the Sanctuary</li></ul><p><strong>Each new level unlocks:</strong></p><ul><li>New items available at the shop</li><li>New characters can start at a higher level</li></ul></div></li>
-        <li class="item"><span class="term" data-term="push">Push / Pull</span><div class="detail"><h3>Push X / Pull X</h3><span class="tag tag-page">p22</span><p>Move target X hexes away from you (Push) or toward you (Pull).</p><ul><li>If you apply it, MUST use full distance unless blocked</li><li>Can't push through/into figures, obstacles, walls</li><li>CAN push through/into <span class="ref" data-term="difficult-terrain">Difficult</span>, <span class="ref" data-term="trap">traps</span>, <span class="ref" data-term="hazardous-terrain">hazards</span></li><li>Non-flying targets trigger traps/hazards when pushed in</li></ul><p>Push/Pull is optional—can choose not to apply it at all.</p></div></li>
+        <li class="item"><span class="term" data-term="perk">Perk</span><div class="detail"><h3>Perk</h3><span class="tag tag-page">p44</span><p>Permanente verbetering van het <span class="ref" data-term="attack-modifier">modifier deck</span>.</p><p><strong>Perks verdienen via:</strong></p><ul><li>3 vinkjes (<span class="ref" data-term="battle-goal">Battle Goals</span>)</li><li>Elk level omhoog</li><li>Elk eerder gepensioneerd personage (+1 voor nieuwe personages)</li></ul><p>Elke perk verwijdert slechte kaarten of voegt krachtige nieuwe toe.</p></div></li>
+        <li class="item"><span class="term" data-term="pierce">Pierce</span><div class="detail"><h3>Pierce Y</h3><span class="tag tag-page">p22</span><p>Negeert Y punten van <span class="ref" data-term="shield">Shield</span>.</p><p>Voorbeeld: Attack 4, Pierce 2 vs Shield 3 → Shield teruggebracht tot 1 → Richt 3 schade aan.</p><p>Pierce heeft geen effect als het doelwit geen Shield heeft.</p></div></li>
+        <li class="item"><span class="term" data-term="poison">Poison</span><div class="detail"><h3>Poison</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p22</span><p>Alle aanvallen op dit figuur krijgen <strong>+1 schade</strong> (toegepast vóór <span class="ref" data-term="shield">Shield</span>).</p><p>Wordt NIET verwijderd aan het einde van de beurt. Wordt alleen verwijderd door <span class="ref" data-term="heal">Heal</span> (maar Heal herstelt GEEN HP als het doelwit Poisoned is).</p></div></li>
+        <li class="item"><span class="term" data-term="personal-quest">Personal Quest</span><div class="detail"><h3>Personal Quest</h3><span class="tag tag-page">p48</span><p>Een geheim langetermijndoel uniek voor elk personage.</p><ul><li>Trek er 2 bij het aanmaken van een personage, houd er 1 geheim</li><li>Voltooiing ervan zorgt ervoor dat je personage met <span class="ref" data-term="retirement">pensioen</span> gaat</li><li>Pensionering ontgrendelt een nieuwe klasse en geeft <span class="ref" data-term="prosperity">welvaart</span>-vinkjes en perks</li></ul></div></li>
+        <li class="item"><span class="term" data-term="prosperity">Prosperity</span><div class="detail"><h3>Prosperity</h3><span class="tag tag-page">p48</span><p>Het algehele rijkdoms- en ontwikkelingsniveau van de stad, variërend van 1 tot 9.</p><p><strong>Welvaartsvinkjes verdienen via:</strong></p><ul><li>Pensionering van personages</li><li>Bepaalde scenariobeloningen</li><li>Donaties aan de Sanctuary</li></ul><p><strong>Elk nieuw niveau ontgrendelt:</strong></p><ul><li>Nieuwe items beschikbaar in de winkel</li><li>Nieuwe personages kunnen op een hoger level beginnen</li></ul></div></li>
+        <li class="item"><span class="term" data-term="push">Push / Pull</span><div class="detail"><h3>Push X / Pull X</h3><span class="tag tag-page">p22</span><p>Beweeg het doelwit X hexes van je af (Push) of naar je toe (Pull).</p><ul><li>Als je het toepast, MOET je de volledige afstand gebruiken tenzij geblokkeerd</li><li>Kan niet door/in figuren, obstakels, muren pushen</li><li>KAN door/in <span class="ref" data-term="difficult-terrain">Difficult terrain</span>, <span class="ref" data-term="trap">vallen</span>, <span class="ref" data-term="hazardous-terrain">gevaarlijk terrein</span> pushen</li><li>Niet-vliegende doelwitten activeren vallen/gevaarlijk terrein wanneer erin gepushed</li></ul><p>Push/Pull is optioneel — je kunt kiezen het helemaal niet toe te passen.</p></div></li>
     </ul></section>
 
 <section id="R" class="section"><div class="letter">R</div><ul class="list">
-    <li class="item"><span class="term" data-term="range">Range</span><div class="detail"><h3>Range</h3><span class="tag tag-page">p19</span><p>Count hexes between you and target, including target's hex.</p><p>Walls force you to count around (increases range). Most ranged abilities also require <span class="ref" data-term="line-of-sight">LOS</span>.</p></div></li>
-    <li class="item"><span class="term" data-term="retaliate">Retaliate</span><div class="detail"><h3>Retaliate X</h3><span class="tag tag-page">p26</span><p>Deal X damage back to attacker if they're in range (default Range 1, or specified Range Y).</p><p><strong>Triggers:</strong> After attack fully resolves, if retaliating figure survived, and attacker is in range.</p><p><strong>Does NOT trigger if:</strong></p><ul><li>Retaliating figure killed by attack</li><li>Attacker pushed out of range</li></ul><p><strong>DOES trigger if:</strong> Attacker pulled INTO range.</p><div class="note warn">Retaliate is NOT an attack: no modifier draw, <span class="ref" data-term="shield">Shield</span> doesn't reduce it, <span class="ref" data-term="poison">Poison</span> doesn't boost it.</div><p>Works vs <span class="ref" data-term="invisible">Invisible</span>. <span class="ref" data-term="stun">Stunned</span> figures with active Retaliate still retaliate.</p></div></li>
+    <li class="item"><span class="term" data-term="range">Range</span><div class="detail"><h3>Range</h3><span class="tag tag-page">p19</span><p>Tel hexes tussen jou en het doelwit, inclusief de hex van het doelwit.</p><p>Muren dwingen je om er omheen te tellen (vergroot het bereik). De meeste ranged abilities vereisen ook <span class="ref" data-term="line-of-sight">LOS</span>.</p></div></li>
+    <li class="item"><span class="term" data-term="retaliate">Retaliate</span><div class="detail"><h3>Retaliate X</h3><span class="tag tag-page">p26</span><p>Richt X schade terug aan bij de aanvaller als die binnen bereik is (standaard Range 1, of opgegeven Range Y).</p><p><strong>Activeert:</strong> Nadat de aanval volledig is afgehandeld, als het retalierende figuur overleefde en de aanvaller binnen bereik is.</p><p><strong>Activeert NIET als:</strong></p><ul><li>Het retalierende figuur gedood werd door de aanval</li><li>De aanvaller uit bereik gepushed werd</li></ul><p><strong>ACTIVEERT WEL als:</strong> De aanvaller het bereik wordt ingetrokken (Pull).</p><div class="note warn">Retaliate is GEEN aanval: geen modifier trekken, <span class="ref" data-term="shield">Shield</span> vermindert het niet, <span class="ref" data-term="poison">Poison</span> versterkt het niet.</div><p>Werkt tegen <span class="ref" data-term="invisible">Invisible</span>. <span class="ref" data-term="stun">Stunned</span> figuren met actieve Retaliate vergelden nog steeds.</p></div></li>
     <li class="item"><span class="term" data-term="retirement">Retirement</span><div class="detail"><h3>Character Retirement</h3><span class="tag tag-page">p48</span>
 
-<p>When you complete your Personal Quest, your character retires from adventuring.</p>
-<p><strong>When Retirement Happens:</strong></p>
+<p>Wanneer je je Personal Quest voltooit, gaat je personage met pensioen van het avonturen.</p>
+<p><strong>Wanneer pensionering plaatsvindt:</strong></p>
 <ul>
-    <li>Check your Personal Quest after each successful scenario</li>
-    <li>If completed, your character retires at the end of that scenario</li>
-    <li>You can finish the current scenario normally</li>
+    <li>Controleer je Personal Quest na elk succesvol scenario</li>
+    <li>Als voltooid, gaat je personage met pensioen aan het einde van dat scenario</li>
+    <li>Je kunt het huidige scenario normaal afmaken</li>
 </ul>
-<p><strong>Retirement Benefits:</strong></p>
+<p><strong>Voordelen van pensionering:</strong></p>
 <ul>
-    <li>Unlock a new character class (specified on Personal Quest)</li>
-    <li>Add a new City/Road Event card to the decks</li>
-    <li>Gain 1 extra <span class="ref" data-term="perk">Perk</span> for ALL future characters you create</li>
-    <li>Gain Prosperity checkmarks for the town</li>
+    <li>Ontgrendel een nieuwe personageklasse (vermeld op de Personal Quest)</li>
+    <li>Voeg een nieuwe Stad-/Weg-eventkaart toe aan de decks</li>
+    <li>Verdien 1 extra <span class="ref" data-term="perk">Perk</span> voor ALLE toekomstige personages die je aanmaakt</li>
+    <li>Verdien welvaartsvinkjes voor de stad</li>
 </ul>
-<p><strong>After Retirement:</strong></p>
+<p><strong>Na pensionering:</strong></p>
 <ul>
-    <li>Create a new character (can be any unlocked class)</li>
-    <li>New character starts at Prosperity level (not level 1)</li>
-    <li>New character gets starting gold based on Prosperity</li>
-    <li>Your retired character's items go back to the shop</li>
+    <li>Maak een nieuw personage aan (kan elke ontgrendelde klasse zijn)</li>
+    <li>Nieuw personage begint op het welvaartsniveau (niet level 1)</li>
+    <li>Nieuw personage krijgt startgold op basis van welvaart</li>
+    <li>De items van je gepensioneerde personage gaan terug naar de winkel</li>
 </ul></div></li>
-        <li class="item"><span class="term" data-term="road-events">Road Events</span><div class="detail"><h3>Road Events</h3><span class="tag tag-page">p46</span><p>Draw and resolve 1 road event card when traveling to a new scenario (not when replaying a scenario).</p><ul><li>Two options (A/B) with different consequences</li><li>Can affect the party before the scenario starts (buffs, debuffs, gold, etc.)</li></ul></div></li>
-        <li class="item"><span class="term" data-term="rolling-modifier">Rolling Modifier</span><div class="detail"><h3>Rolling Modifier</h3><span class="tag tag-page">p11</span><p><span class="ref" data-term="attack-modifier">Modifier</span> cards with chain-link symbol. When drawn, keep drawing until non-rolling—add all effects together.</p><p>See <span class="ref" data-term="advantage">Advantage</span>/<span class="ref" data-term="disadvantage">Disadvantage</span> for special rules.</p></div></li>
+        <li class="item"><span class="term" data-term="road-events">Road Events</span><div class="detail"><h3>Road Events</h3><span class="tag tag-page">p46</span><p>Trek en verwerk 1 weg-eventkaart bij het reizen naar een nieuw scenario (niet bij het herspelen van een scenario).</p><ul><li>Twee opties (A/B) met verschillende gevolgen</li><li>Kan de groep beïnvloeden vóórdat het scenario begint (buffs, debuffs, gold, enz.)</li></ul></div></li>
+        <li class="item"><span class="term" data-term="rolling-modifier">Rolling Modifier</span><div class="detail"><h3>Rolling Modifier</h3><span class="tag tag-page">p11</span><p><span class="ref" data-term="attack-modifier">Modifier</span>-kaarten met een kettingschakel-symbool. Wanneer getrokken, blijf trekken totdat een niet-rolling kaart verschijnt — tel alle effecten bij elkaar op.</p><p>Zie <span class="ref" data-term="advantage">Advantage</span>/<span class="ref" data-term="disadvantage">Disadvantage</span> voor speciale regels.</p></div></li>
         <li class="item"><span class="term" data-term="round-structure">Round Structure</span><div class="detail"><h3>Round Structure</h3><span class="tag tag-page">p16-18</span>
-<p>Each round of Gloomhaven follows this structure:</p>
+<p>Elke ronde van Gloomhaven volgt deze structuur:</p>
 <ol>
-    <li><strong><span class="ref" data-term="card-selection">Card Selection</span>:</strong> All players simultaneously select 2 cards (or declare <span class="ref" data-term="long-rest">Long Rest</span>)</li>
-    <li><strong>Reveal Initiatives:</strong> Players reveal their leading cards, draw <span class="ref" data-term="monster-ability-cards">Monster Ability Cards</span></li>
-    <li><strong>Determine Turn Order:</strong> Sort all figures by <span class="ref" data-term="initiative">initiative</span> (lowest first)</li>
-    <li><strong>Take Turns:</strong> Each figure takes their turn in initiative order</li>
-    <li><strong><span class="ref" data-term="end-of-round">End of Round</span>:</strong> Clean up, shift elements, optional Short Rest</li>
+    <li><strong><span class="ref" data-term="card-selection">Card Selection</span>:</strong> Alle spelers kiezen tegelijkertijd 2 kaarten (of verklaren <span class="ref" data-term="long-rest">Long Rest</span>)</li>
+    <li><strong>Initiatives onthullen:</strong> Spelers onthullen hun leidende kaarten, trek <span class="ref" data-term="monster-ability-cards">Monster Ability Cards</span></li>
+    <li><strong>Beurtvolgorde bepalen:</strong> Sorteer alle figuren op <span class="ref" data-term="initiative">initiative</span> (laagste eerst)</li>
+    <li><strong>Beurten nemen:</strong> Elk figuur neemt zijn beurt in volgorde van initiative</li>
+    <li><strong><span class="ref" data-term="end-of-round">End of Round</span>:</strong> Opruimen, elementen verschuiven, optionele Short Rest</li>
 </ol>
-<p>Repeat rounds until scenario ends (success or failure).</p></div></li>
+<p>Herhaal rondes totdat het scenario eindigt (succes of mislukking).</p></div></li>
     </ul></section>
 
 <section id="S" class="section"><div class="letter">S</div><ul class="list">
-    <li class="item"><span class="term" data-term="sanctuary">Sanctuary</span><div class="detail"><h3>Sanctuary Donation</h3><span class="tag tag-page">p45</span><p>City activity: Pay 10 gold → add 2 <span class="ref" data-term="bless">Bless</span> cards to your deck.</p><p>Once per city visit, Campaign Mode only.</p></div></li>
+    <li class="item"><span class="term" data-term="sanctuary">Sanctuary</span><div class="detail"><h3>Sanctuary Donatie</h3><span class="tag tag-page">p45</span><p>Stadsactiviteit: Betaal 10 gold → voeg 2 <span class="ref" data-term="bless">Bless</span>-kaarten toe aan je deck.</p><p>Eén keer per stadsbezoek, alleen in Campagnemodus.</p></div></li>
     <li class="item"><span class="term" data-term="scenario-level">Scenario Level</span><div class="detail"><h3>Scenario Level</h3><span class="tag tag-page">p15</span>
 
-<p>Determines difficulty, affecting monster stats, trap damage, gold earned, and bonus XP.</p>
-<p><strong>Calculating Level:</strong></p>
-<p><span class="formula">Average party level ÷ 2</span>, rounded up</p>
-<p><strong>Difficulty Options:</strong></p>
+<p>Bepaalt de moeilijkheidsgraad en beïnvloedt monsterstats, valschade, verdiend gold en bonus-XP.</p>
+<p><strong>Niveau berekenen:</strong></p>
+<p><span class="formula">Gemiddeld groepsniveau ÷ 2</span>, naar boven afgerond</p>
+<p><strong>Moeilijkheidsopties:</strong></p>
 <ul>
-    <li><strong>Easy:</strong> Level -1 (minimum 0)</li>
-    <li><strong>Normal:</strong> Calculated level</li>
-    <li><strong>Hard:</strong> Level +1</li>
-    <li><strong>Very Hard:</strong> Level +2 (maximum 7)</li>
+    <li><strong>Makkelijk:</strong> Niveau -1 (minimum 0)</li>
+    <li><strong>Normaal:</strong> Berekend niveau</li>
+    <li><strong>Moeilijk:</strong> Niveau +1</li>
+    <li><strong>Zeer moeilijk:</strong> Niveau +2 (maximum 7)</li>
 </ul>
-<p><strong>What Level Affects:</strong></p>
+<p><strong>Wat het niveau beïnvloedt:</strong></p>
 <table style="width:100%; margin:0.5rem 0; border-collapse:collapse; font-size:0.9rem;">
 <tr style="border-bottom:1px solid var(--border);"><th style="padding:0.3rem;text-align:left;color:var(--gold);">Lvl</th><th>Monster</th><th>Trap</th><th>Hazard</th><th>Gold×</th><th>XP</th></tr>
 <tr><td style="padding:0.3rem;">0</td><td>0</td><td>2</td><td>1</td><td>2</td><td>4</td></tr>
@@ -555,41 +555,41 @@
 <tr><td style="padding:0.3rem;">6</td><td>6</td><td>8</td><td>4</td><td>5</td><td>16</td></tr>
 <tr><td style="padding:0.3rem;">7</td><td>7</td><td>9</td><td>4</td><td>6</td><td>18</td></tr>
 </table></div></li>
-        <li class="item"><span class="term" data-term="scenario-setup">Scenario Setup</span><div class="detail"><h3>Scenario Setup</h3><span class="tag tag-page">p32</span><p>Steps to complete before starting a scenario:</p><ol><li>Read the intro text in the scenario book</li><li>Set up map tiles and overlay tiles</li><li>Place monsters per player count (White=2, Yellow=3, Red=4)</li><li>Set monster stats to the current scenario level</li><li>Draw monster ability cards for each monster type</li><li>Set initiative and HP dials</li><li>Draw battle goals (2 per player, keep 1)</li></ol></div></li>
+        <li class="item"><span class="term" data-term="scenario-setup">Scenario Setup</span><div class="detail"><h3>Scenario Setup</h3><span class="tag tag-page">p32</span><p>Stappen te voltooien vóór het starten van een scenario:</p><ol><li>Lees de introductietekst in het scenarioboek</li><li>Stel kaarttegels en overlay-tegels op</li><li>Plaats monsters op basis van het spelersaantal (Wit=2, Geel=3, Rood=4)</li><li>Stel monsterstats in op het huidige scenarioniveau</li><li>Trek monster ability-kaarten voor elk monstertype</li><li>Stel initiative- en HP-wijzerplaten in</li><li>Trek battle goals (2 per speler, houd er 1)</li></ol></div></li>
         <li class="item"><span class="term" data-term="scenario-failure">Scenario Failure</span><div class="detail"><h3>Scenario Failure</h3><span class="tag tag-page">p38</span><p>Een scenario mislukt wanneer:</p><ul><li>Alle characters zijn <span class="ref" data-term="exhaustion">Exhausted</span> voordat het doel bereikt is</li><li>Een scenario-specifieke faalconditie optreedt (bijv. een NPC sterft)</li></ul><p><strong>Gevolgen:</strong></p><ul><li>Geen scenario-beloning, geen bonus XP</li><li>Wel behoud je alle XP en gold die je tijdens het scenario verdiende</li><li>Je behoudt items en perks</li><li>Je mag het scenario opnieuw proberen (zonder road event)</li></ul><div class="note">Er is geen permanente "campaign loss" — je kunt elk scenario zo vaak herspelen als je wilt. Alleen de tijd (en je geduld) gaat verloren.</div></div></li>
         <li class="item"><span class="term" data-term="campaign-end">Campaign Einde</span><div class="detail"><h3>Campaign Einde: Winnen &amp; Verliezen</h3><span class="tag tag-page">p48</span><p><strong>Winnen:</strong> De Gloomhaven-campagne eindigt officieel wanneer scenario 115 (<em>Gloomhaven</em>) succesvol wordt voltooid. Dit ontsluit de epiloog en de ware eindtekst.</p><p><strong>Verliezen bestaat niet op campagneniveau.</strong> Gloomhaven heeft geen harde "campaign over"-staat. Je kunt:</p><ul><li>Mislukte scenarios herspelen zonder straf</li><li>Altijd een nieuwe character aanmaken als je huidige retired of exhausted raakt</li><li>Doorgaan zolang er scenarios beschikbaar zijn</li></ul><p><strong>Scenario-specifieke faalcondities</strong> zorgen hooguit voor:<br>→ Verlies van beloningen van dat scenario<br>→ Bepaalde story-keuzes die niet meer beschikbaar zijn</p><div class="note warn">Sommige scenario-uitkomsten sluiten alternatieve paden af. Lees de conclusietekst goed — sommige keuzes zijn permanent!</div></div></li>
-        <li class="item"><span class="term" data-term="scenario-completion">Scenario Completion</span><div class="detail"><h3>Scenario Completion</h3><span class="tag tag-page">p38-39</span><p>After successfully completing a scenario:</p><ol><li>Read the conclusion text in the scenario book</li><li>Each character gains the scenario XP bonus</li><li>Convert looted coins to gold (value × gold multiplier)</li><li>Complete battle goals → earn checkmarks toward <span class="ref" data-term="perk">Perks</span></li><li>Apply any scenario rewards listed</li><li>Mark scenario as complete on the campaign map</li></ol><p>Then proceed to <span class="ref" data-term="town-activities">Town Activities</span> before the next scenario.</p></div></li>
-        <li class="item"><span class="term" data-term="self">Self (Targeting)</span><div class="detail"><h3>Self / Yourself</h3>
-<p>When an ability says "Self" or "yourself," it can ONLY target you—the figure performing the ability.</p>
-<p><strong>Examples:</strong></p>
+        <li class="item"><span class="term" data-term="scenario-completion">Scenario Completion</span><div class="detail"><h3>Scenario Completion</h3><span class="tag tag-page">p38-39</span><p>Na het succesvol voltooien van een scenario:</p><ol><li>Lees de conclusietekst in het scenarioboek</li><li>Elk personage ontvangt de scenario-XP-bonus</li><li>Zet geplunderde munten om naar gold (waarde × goudmultiplier)</li><li>Voltooi battle goals → verdien vinkjes richting <span class="ref" data-term="perk">Perks</span></li><li>Pas eventuele vermelde scenariobeloningen toe</li><li>Markeer het scenario als voltooid op de campagnekaart</li></ol><p>Ga daarna verder met <span class="ref" data-term="town-activities">Town Activities</span> vóór het volgende scenario.</p></div></li>
+        <li class="item"><span class="term" data-term="self">Self (Targeting)</span><div class="detail"><h3>Self / Jezelf</h3>
+<p>Wanneer een ability "Self" of "yourself" zegt, kan die ALLEEN jou als doelwit kiezen — het figuur dat de ability uitvoert.</p>
+<p><strong>Voorbeelden:</strong></p>
 <ul>
-    <li>"Heal 3, Self" — Only heals you, cannot target allies</li>
-    <li>"Shield 2, Self" — Only you get Shield</li>
-    <li>"Move 3, Self" — Only you move (not summons)</li>
+    <li>"Heal 3, Self" — Healt alleen jou, kan geen allies als doelwit kiezen</li>
+    <li>"Shield 2, Self" — Alleen jij krijgt Shield</li>
+    <li>"Move 3, Self" — Alleen jij beweegt (niet summons)</li>
 </ul>
-<p><strong>Important Distinction:</strong></p>
-<p>Remember: You are NOT your own <span class="ref" data-term="ally">ally</span>! So:</p>
+<p><strong>Belangrijk onderscheid:</strong></p>
+<p>Onthoud: Jij bent NIET je eigen <span class="ref" data-term="ally">ally</span>! Dus:</p>
 <ul>
-    <li>"Heal 2, all allies" = heals allies, NOT you</li>
-    <li>"Heal 2, Range 3" = can heal you OR an ally</li>
-    <li>"Heal 2, Self" = only heals you</li>
+    <li>"Heal 2, all allies" = healt allies, NIET jou</li>
+    <li>"Heal 2, Range 3" = kan jou OF een ally healen</li>
+    <li>"Heal 2, Self" = healt alleen jou</li>
 </ul></div></li>
-        <li class="item"><span class="term" data-term="shield">Shield</span><div class="detail"><h3>Shield X</h3><span class="tag tag-page">p25</span><p>Reduces attack damage by X (after <span class="ref" data-term="pierce">Pierce</span>).</p><p><strong>Duration by source:</strong></p><ul><li>Monster stat card: Always active</li><li>Monster ability: Until end of round</li><li>Modifier card: Until end of round</li><li>Item charge: Just for that attack</li></ul><p>Multiple Shields? Defender chooses order. <span class="ref" data-term="stun">Stunned</span> figures still benefit from active Shield.</p></div></li>
-        <li class="item"><span class="term" data-term="short-rest">Short Rest</span><div class="detail"><h3>Short Rest</h3><span class="tag tag-page">p17</span><p>Optional at end of round. Requires ≥2 cards in discard.</p><ol><li>Random discard card → lost pile</li><li>Don't like it? Take 1 HP damage, pick different random card (once per rest)</li><li>Return rest to hand</li></ol><p>No healing, no item refresh. Can do in final round.</p></div></li>
-        <li class="item"><span class="term" data-term="strengthen">Strengthen</span><div class="detail"><h3>Strengthen</h3><span class="tag tag-pos">Positive</span><span class="tag tag-page">p23</span><p><span class="ref" data-term="advantage">Advantage</span> on all attacks.</p><p>Removed at end of turn. Powerful offensive buff.</p></div></li>
-        <li class="item"><span class="term" data-term="stun">Stun</span><div class="detail"><h3>Stun</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p23</span><p>Cannot perform abilities or use <span class="ref" data-term="items">items</span>.</p><p><strong>Character:</strong> Must <span class="ref" data-term="long-rest">Long Rest</span> or discard both chosen cards.</p><p><strong>Monster:</strong> Entire turn skipped.</p><div class="note">Active <span class="ref" data-term="shield">Shield</span> and <span class="ref" data-term="retaliate">Retaliate</span> still work while Stunned!</div><p>Removed at end of turn.</p></div></li>
-        <li class="item"><span class="term" data-term="summon">Summon</span><div class="detail"><h3>Summon</h3><span class="tag tag-page">p26</span><p>Create ally figure in empty <span class="ref" data-term="adjacent">adjacent</span> hex. No empty hex = summon fails.</p><p><strong>Behavior:</strong></p><ul><li>Acts on your <span class="ref" data-term="initiative">initiative</span>, immediately before you</li><li>Follows monster AI (not directly controlled)</li><li>Assumed ability: Move +0, Attack +0</li><li>Uses YOUR <span class="ref" data-term="attack-modifier">modifier</span> deck</li><li>Kill credit goes to you</li></ul><p><strong>Removed when:</strong> HP=0, summoner <span class="ref" data-term="exhaustion">exhausted</span>, summoning card recovered/lost.</p><p>Summons can't <span class="ref" data-term="loot">loot</span>.</p></div></li>
+        <li class="item"><span class="term" data-term="shield">Shield</span><div class="detail"><h3>Shield X</h3><span class="tag tag-page">p25</span><p>Vermindert aanvalsschade met X (na <span class="ref" data-term="pierce">Pierce</span>).</p><p><strong>Duur per bron:</strong></p><ul><li>Monsterstatkaart: Altijd actief</li><li>Monster ability: Tot het einde van de ronde</li><li>Modifier-kaart: Tot het einde van de ronde</li><li>Itemlading: Alleen voor die aanval</li></ul><p>Meerdere Shields? Verdediger kiest de volgorde. <span class="ref" data-term="stun">Stunned</span> figuren profiteren nog steeds van actieve Shield.</p></div></li>
+        <li class="item"><span class="term" data-term="short-rest">Short Rest</span><div class="detail"><h3>Short Rest</h3><span class="tag tag-page">p17</span><p>Optioneel aan het einde van de ronde. Vereist ≥2 kaarten in de aflegstapel.</p><ol><li>Willekeurige aflegkaart → verloren stapel</li><li>Niet tevreden? Neem 1 HP-schade, kies een andere willekeurige kaart (één keer per rust)</li><li>Pak de rest terug in je hand</li></ol><p>Geen healing, geen itemherstel. Kan gedaan worden in de laatste ronde.</p></div></li>
+        <li class="item"><span class="term" data-term="strengthen">Strengthen</span><div class="detail"><h3>Strengthen</h3><span class="tag tag-pos">Positive</span><span class="tag tag-page">p23</span><p><span class="ref" data-term="advantage">Advantage</span> op alle aanvallen.</p><p>Wordt verwijderd aan het einde van de beurt. Krachtige offensieve buff.</p></div></li>
+        <li class="item"><span class="term" data-term="stun">Stun</span><div class="detail"><h3>Stun</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p23</span><p>Kan geen abilities uitvoeren of <span class="ref" data-term="items">items</span> gebruiken.</p><p><strong>Personage:</strong> Moet een <span class="ref" data-term="long-rest">Long Rest</span> nemen of beide gekozen kaarten afleggen.</p><p><strong>Monster:</strong> Gehele beurt overgeslagen.</p><div class="note">Actieve <span class="ref" data-term="shield">Shield</span> en <span class="ref" data-term="retaliate">Retaliate</span> werken nog steeds terwijl Stunned!</div><p>Wordt verwijderd aan het einde van de beurt.</p></div></li>
+        <li class="item"><span class="term" data-term="summon">Summon</span><div class="detail"><h3>Summon</h3><span class="tag tag-page">p26</span><p>Maak een ally-figuur aan in een lege <span class="ref" data-term="adjacent">adjacent</span> hex. Geen lege hex = summon mislukt.</p><p><strong>Gedrag:</strong></p><ul><li>Handelt op jouw <span class="ref" data-term="initiative">initiative</span>, direct vóór jou</li><li>Volgt monster-AI (niet direct bestuurbaar)</li><li>Aangenomen ability: Move +0, Attack +0</li><li>Gebruikt JOUW <span class="ref" data-term="attack-modifier">modifier</span>-deck</li><li>Kill-credit gaat naar jou</li></ul><p><strong>Verwijderd wanneer:</strong> HP=0, oproeper <span class="ref" data-term="exhaustion">exhausted</span>, oproepkaart hersteld/verloren.</p><p>Summons kunnen niet <span class="ref" data-term="loot">looten</span>.</p></div></li>
     </ul></section>
 
 <section id="T" class="section"><div class="letter">T</div><ul class="list">
-    <li class="item"><span class="term" data-term="target">Target Z</span><div class="detail"><h3>Target Z</h3><span class="tag tag-page">p21</span><p>Can target up to Z different figures in <span class="ref" data-term="range">range</span> + <span class="ref" data-term="line-of-sight">LOS</span>.</p><p>Draw separate <span class="ref" data-term="attack-modifier">modifier</span> for each target. Bonuses apply to all targets.</p><p>On <span class="ref" data-term="area-of-effect">AoE</span>: adds Z-1 targets outside the pattern.</p></div></li>
-    <li class="item"><span class="term" data-term="town-activities">Town Activities</span><div class="detail"><h3>Town Activities</h3><span class="tag tag-page">p43-46</span><p>Between scenarios in Campaign Mode, the party visits Gloomhaven. Steps in order:</p><ol><li>Draw and resolve a <span class="ref" data-term="road-events">road event</span> (when traveling to a new scenario)</li><li>Visit the city: shop for <span class="ref" data-term="items">items</span>, use the <span class="ref" data-term="enhancement">Enhancement</span> Shop, donate to the <span class="ref" data-term="sanctuary">Sanctuary</span>, sell items</li><li>Draw and resolve a <span class="ref" data-term="city-events">city event</span></li><li>Level up characters if eligible (sufficient <span class="ref" data-term="experience">XP</span>)</li><li>Create new characters or <span class="ref" data-term="retirement">retire</span> characters whose <span class="ref" data-term="personal-quest">Personal Quest</span> is complete</li></ol></div></li>
-    <li class="item"><span class="term" data-term="trap">Trap</span><div class="detail"><h3>Trap</h3><span class="tag tag-page">p14</span><p>Triggers when entered, then removed from map.</p><p>Damage traps: <span class="formula">2 + Scenario Level</span></p><ul><li><span class="ref" data-term="flying">Flying</span> doesn't trigger traps</li><li><span class="ref" data-term="jump">Jump</span> ignores except destination</li><li><span class="ref" data-term="push">Pushing</span> non-flying figures into traps triggers them</li></ul><p>Player-created traps use ability card damage, not level formula.</p></div></li>
+    <li class="item"><span class="term" data-term="target">Target Z</span><div class="detail"><h3>Target Z</h3><span class="tag tag-page">p21</span><p>Kan tot Z verschillende figuren als doelwit kiezen binnen <span class="ref" data-term="range">bereik</span> + <span class="ref" data-term="line-of-sight">LOS</span>.</p><p>Trek een aparte <span class="ref" data-term="attack-modifier">modifier</span> voor elk doelwit. Bonussen gelden voor alle doelwitten.</p><p>Bij <span class="ref" data-term="area-of-effect">AoE</span>: voegt Z-1 doelwitten toe buiten het patroon.</p></div></li>
+    <li class="item"><span class="term" data-term="town-activities">Town Activities</span><div class="detail"><h3>Town Activities</h3><span class="tag tag-page">p43-46</span><p>Tussen scenario's in Campagnemodus bezoekt de groep Gloomhaven. Stappen in volgorde:</p><ol><li>Trek en verwerk een <span class="ref" data-term="road-events">weg-event</span> (bij reizen naar een nieuw scenario)</li><li>Bezoek de stad: koop <span class="ref" data-term="items">items</span>, gebruik de <span class="ref" data-term="enhancement">Enhancement</span> Shop, doneer aan de <span class="ref" data-term="sanctuary">Sanctuary</span>, verkoop items</li><li>Trek en verwerk een <span class="ref" data-term="city-events">stads-event</span></li><li>Ga omhoog in level als je in aanmerking komt (voldoende <span class="ref" data-term="experience">XP</span>)</li><li>Maak nieuwe personages aan of stuur personages met <span class="ref" data-term="retirement">pensioen</span> waarvan de <span class="ref" data-term="personal-quest">Personal Quest</span> voltooid is</li></ol></div></li>
+    <li class="item"><span class="term" data-term="trap">Trap</span><div class="detail"><h3>Trap</h3><span class="tag tag-page">p14</span><p>Wordt geactiveerd wanneer betreden, daarna verwijderd van de kaart.</p><p>Schadevalstrikken: <span class="formula">2 + Scenarioniveau</span></p><ul><li><span class="ref" data-term="flying">Flying</span> activeert vallen niet</li><li><span class="ref" data-term="jump">Jump</span> negeert vallen behalve de bestemming</li><li>Niet-vliegende figuren <span class="ref" data-term="push">pushen</span> in vallen activeert ze</li></ul><p>Door spelers gemaakte vallen gebruiken de schade van de ability-kaart, niet de niveauformule.</p></div></li>
 </ul></section>
 
 <section id="W" class="section"><div class="letter">W</div><ul class="list">
-    <li class="item"><span class="term" data-term="wall">Wall</span><div class="detail"><h3>Wall</h3><p>Impassable barriers. Thick black lines between hexes or tile edges. Partial hexes are walls.</p><p>Blocks: All movement (even <span class="ref" data-term="flying">Flying</span>/<span class="ref" data-term="jump">Jump</span>), <span class="ref" data-term="line-of-sight">LOS</span>, <span class="ref" data-term="adjacent">adjacency</span>, direct <span class="ref" data-term="range">range</span> counting.</p></div></li>
-    <li class="item"><span class="term" data-term="wound">Wound</span><div class="detail"><h3>Wound</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p22</span><p>Suffer 1 damage at start of each turn. Can kill you if at 1 HP.</p><p>NOT removed at end of turn. Only <span class="ref" data-term="heal">Heal</span> removes it (HP still restored, unlike <span class="ref" data-term="poison">Poison</span>).</p><p>Wound + Poison + Heal: Remove both, NO HP restored.</p></div></li>
+    <li class="item"><span class="term" data-term="wall">Wall</span><div class="detail"><h3>Wall</h3><p>Onpasseerbare barrières. Dikke zwarte lijnen tussen hexes of tegranden. Gedeeltelijke hexes zijn muren.</p><p>Blokkeert: Alle beweging (ook <span class="ref" data-term="flying">Flying</span>/<span class="ref" data-term="jump">Jump</span>), <span class="ref" data-term="line-of-sight">LOS</span>, <span class="ref" data-term="adjacent">adjacentie</span>, directe <span class="ref" data-term="range">bereik</span>telling.</p></div></li>
+    <li class="item"><span class="term" data-term="wound">Wound</span><div class="detail"><h3>Wound</h3><span class="tag tag-neg">Negative</span><span class="tag tag-page">p22</span><p>Lijd 1 schade aan het begin van elke beurt. Kan je doden als je op 1 HP zit.</p><p>Wordt NIET verwijderd aan het einde van de beurt. Alleen <span class="ref" data-term="heal">Heal</span> verwijdert het (HP wordt wel hersteld, anders dan bij <span class="ref" data-term="poison">Poison</span>).</p><p>Wound + Poison + Heal: Verwijder beide, GEEN HP hersteld.</p></div></li>
 </ul></section>
 
 </main>
