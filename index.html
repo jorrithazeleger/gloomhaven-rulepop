@@ -66,8 +66,6 @@
     @media(max-width:600px){main{padding:1rem}.logo{font-size:1.5rem}body{font-size:16px}}
     .item.hidden,.section.hidden{display:none}
     .lang-en{display:none}
-    body.lang-en .lang-nl{display:none}
-    body.lang-en .lang-en{display:block}
     .lang-toggle{position:fixed;top:1rem;right:1rem;z-index:200;display:flex;gap:0.25rem}
     .lang-btn{padding:0.35rem 0.7rem;border-radius:6px;border:1px solid var(--border);background:var(--card);color:var(--text2);cursor:pointer;font-family:'Cinzel',serif;font-size:0.8rem;transition:0.15s}
     .lang-btn.active{background:var(--gold);color:var(--bg);border-color:var(--gold)}
@@ -955,7 +953,7 @@
 <button class="back-top">↑</button>
 <footer><p>Gloomhaven © Cephalofair Games | Inspired by <a href="https://sleeping-gods.rulepop.com">Rulepop</a></p></footer>
 <script>
-function setLang(l){document.body.classList.toggle('lang-en',l==='en');document.getElementById('btn-nl').classList.toggle('active',l==='nl');document.getElementById('btn-en').classList.toggle('active',l==='en');localStorage.setItem('ghLang',l);}
+function setLang(l){const isEN=l==='en';document.querySelectorAll('.lang-nl').forEach(el=>el.style.display=isEN?'none':'');document.querySelectorAll('.lang-en').forEach(el=>el.style.display=isEN?'block':'none');document.getElementById('btn-nl').classList.toggle('active',!isEN);document.getElementById('btn-en').classList.toggle('active',isEN);localStorage.setItem('ghLang',l);}
 const _sl=localStorage.getItem('ghLang');if(_sl)setLang(_sl);
 document.querySelectorAll('.term').forEach(t=>t.addEventListener('click',function(){const d=this.nextElementSibling,a=d.classList.contains('active');document.querySelectorAll('.detail.active').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.term.active').forEach(x=>x.classList.remove('active'));if(!a){d.classList.add('active');this.classList.add('active');setTimeout(()=>d.scrollIntoView({behavior:'smooth',block:'nearest'}),50)}}));
 document.addEventListener('click',e=>{if(e.target.classList.contains('ref')){e.preventDefault();const t=document.querySelector('.term[data-term="'+e.target.dataset.term+'"]');if(t){document.querySelectorAll('.detail.active,.term.active').forEach(x=>x.classList.remove('active'));t.classList.add('active');t.nextElementSibling.classList.add('active');t.scrollIntoView({behavior:'smooth',block:'center'})}}});
